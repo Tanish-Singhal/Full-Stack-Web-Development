@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<!-- It specifies this is an HTML5 doc -->
+
+<html lang="en">
+<!-- It is the root of an HTML page -->
+
+<head>
+    <!-- Contains page metadata -->
+
+    <!-- Metadata means Information ki bhi Information -->
+    <!-- Meta Tag is used to Rank your website higher in Google Search Engine Optimization -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/x-icon" href="Images/download1.jpg">
+
+    <title>Basics of HTML</title>
+
+</head>
+
+<body>
+    <!-- The main body of the page rendered by the browser -->
+
+    <h1><b>This is a Heading.</b></h1>
+    <!-- There are 6 types of Heading. h1 is the Largest while h6 is the Smallest. -->
+    <!-- Heading Tag is used to only convey the the Headings. Make sure to use the Heading and paragraph wisely. -->
+
+    <hr>        <!-- Horzontal Line-->
+
+
+    <h3><u>Formatting of Text</u></h3>
+
+    <p>This is a Paragraph.</p>
+    
+    <b>This is Bold</b> <!-- But instead of using <b></b> try using <strong></strong> tag -->
+    <strong>This is Strong</strong>
+
+    <i>This is Italic</i> <!-- But instead of using <i></i> try using <em></em> tag (emphasis tag) -->
+    <em>This is emphasis.</em>
+
+    <u>This is
+       Underline</u>
+    <u>This is Underline 2</u>
+    <!-- These 3 Statements shows that hum kitni bhi enter and space laga de par output hamesha single line me hi aayega. -->
+
+    <small>This is small</small>
+
+    <br><br>
+
+    <p>Lorem ipsum dolor sit amet <mark>consectetur adipisicing elit</mark>. Atque <small>voluptatibus voluptatum eum</small> aut dolor <del>laborum sunt</del> dolores iusto accusantium <ins>incidunt vero quod, amet</ins> maiores.</p>
+    
+    <p>Lorem ipsum dolor<sup>[1][2][3][4]</sup> sit amet consectetur<sub>[1][2][3][4]</sub> adipisicing elit. Quasi corrupti at sunt, magnam exercitationem velit adipisci. Aspernatur aperiam eum ipsa beatae, nemo, natus quam voluptas quod expedita, nam ex sequi nostrum totam? Cumque, repudiandae.</p>
+    
+    <p>Please press <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>R</kbd> to re-render an MDN app.</p>
+    
+    <p>The <code>push()</code> operator is used in python language.</p>
+    <!-- It is used to print the random words in the file by mentioning the number like 24  -->
+    <!-- If we hit enter after writing lorem45 then it will generate 45 bunny text for us -->
+
+    <hr>    <!-- Horizontal line tag-->
+    <!-- ------------------------------------------------------------------------------------------------------------------------------------- -->
+
+    <h3><u>HTML Attributes</u></h3>
+    <!-- Example of Absolute Links -->
+    <a href="https://www.codewithharry.com">Click here to go to Harry's Website</a>
+    <!-- Here 'a' refers to anchor Tag -->
+    <!-- 'href' refers to the href Attribute -->
+
+    <br>
+
+    <a href="https://codewithharry.com" target="_main">Harry's Website</a>
+    <!-- By just writing target="_main" when the client click on the link then the website will open on the another tab -->
+    <!-- Here target is also a attribute -->
+
+    <br>
+
+    <!-- Example of Relative Links -->
+    <a href="about.html" target="_blank">Go to About section of the page.</a>
+
+    <br>
+
+    <br>
+    <hr>
+    <!-- ----------------------------------------------------------------------------------------------------------------------------------------------- -->
+    
+    <h3><u>Subscript and Superscript</u></h3>
+
+    <p>CO<sub>2</sub></p>
+    <p>a<sup>2</sup> + bx + c</p>
+
+    <br>
+    <hr>
+    <!-- ---------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+    <h3><u>Pre Tag</u></h3>
+
+    <pre>
+PYTHON MOUSE R SITE
+If this is set, Python won’t add the user site-packages directory to sys.path.
+      
+See also PEP 370 – Per user site-packages directory
+    PYTHON USER BASE
+    Defines the user base directory, which is used to compute the path of the user site-packages directory and Distutils installation paths for python setup.py install --user.
+      
+    See also PEP 370 – Per user site-packages directory
+    PYTHON EXECUTABLE
+    If this environment variable is set, sys.argv[0] will be set to its value instead of the value got through the C runtime. Only works on macOS.
+    </pre>
+
+    <br>
+
+    <pre>
+    Want more ር̻ዐ̻ዐ̻ረ̻ ㄒ乇乂ㄒ ɛ̯ʄ̯ʄ̯ɛ̯ƈ̯ȶ̯ร̯, kaomojis ᕕ( ᐛ )ᕗ (҂⌣̀_⌣́) ʕ•ᴥ•ʔ, symbols ☬✞ and other cool font-changing stuff? Click here to check out instafonts! Use the sparkle button to add effects.
+    </pre>
+    <!-- If you want to display the Text as it is not in a single line than we use <pre></pre> tag -->
+    
+    <br>
+    <hr>
+    <!-- ---------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+    <h3><u>Write a Quote</u></h3>
+    <blockquote>
+        <p>"Honesty is the Best Policy in the World.</p>
+        <cite>--Tanish Singhal</cite>
+    </blockquote>
+
+</body>
+
+</html>
+
+
+
+
+<!-- HTML is case sensitive Language. Example- <P> </P>, <H1> </H1>, etc. -->
+
+<!-- 
+Difference between Block and Span Element?
+
+In Block Element when we write anything then the whole line (left to right) is reserved for than sentence while when we use Span Element when we write anything then the space equal to the text size is reserved.
+This can be seen by inspect tool on the output page.
+
+Examples:-
+    Block Elements
+    <address> <article> <aside> <blockquote> <canvas> <dd> <div> <dl> <dt> <fieldset> <figcaption> <figure> <footer> <form> <hr> <li> <main> <nav> <noscript> <ol> <p> <pre> <section> <table> <tfoot> <ul> <video> 
+
+    Inline Elements
+    <a> <abbr> <acronym> <b> <bdo> <big> <br> <button> <cite> <code> <dfn> <em> <i> <img> <input> <kbd> <label> <map> <object> <output> <q> <samp> <script> <select> <small> <span> <strong> <sub> <sup> <textarea> <time> <tt> <var>
+-->
