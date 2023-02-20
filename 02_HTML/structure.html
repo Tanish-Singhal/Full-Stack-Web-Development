@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="This is my First pure HTML website">
+    <!-- meta description shoes the description (summary) of our website -->
+    <!-- Example when we search Wikipedia on the browser then it shows something that "Wikipedia is a free online encyclopedia, created and edited by volunteers around the world and hosted by the Wikimedia Foundation." -->
+    <!-- So this shows some description of a website without clicking on the link -->
+    <meta name="keywords" content="html, html5, html website, web development">
+    <meta name="robots" content="INDEX, FOLLOW"> <!-- Always write this -->
+
+    <!-- Open Graph is used to integrate our website with Facebook Algorithm (Means When we share our website in Facebook a card is shown in place of link) -->
+    <meta property="og:url" content="http://www.nytimes.com/2015/02/19/arts/international/when-great-minds-dont-think-alike.html" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="When Great Minds Don’t Think Alike" />
+    <meta property="og:description" content="How much does culture influence creative thinking?" />
+    <meta property="og:image" content="http://static01.nyt.com/images/2015/02/19/arts/international/19iht-btnumbers19A/19iht-btnumbers19A-facebookJumbo-v2.jpg" />
+
+    <!-- Twitter Card Tag is used to integrate our website with the Twitter Algorithm (Means When we share our website in Twitter a card is shown in place of link) -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@flickr" />
+    <meta name="twitter:title" content="Small Island Developing States Photo Submission" />
+    <meta name="twitter:description" content="View the album on Flickr." />
+    <meta name="twitter:image" content="https://farm6.staticflickr.com/5510/14338202952_93595258ff_z.jpg" />
+
+    <link rel="icon" type="image/x-icon" href="Images/download1.jpg">
+
+    <title>Structure and Meta Data</title>
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+
+</head>
+
+<body>
+    
+    <h1>Basic Structure of HTML Website</h1>
+
+    <!-- What is the correct Website Layout?
+            <header>
+            <main>
+            <footer>
+    -->
+
+
+    <!-- Inside header tag we insert the following tag:
+            <header>
+                <nav></nav>                It is used to add navigation bar
+            </header>
+    -->
+
+    <!-- Inside main tag we insert the following tag:   
+            <main>
+                <section></section>               It is use to display the particular part of a page
+                <article></article>               A self contained content
+                <aside></aside>                   It is used to display the content aside from the main content (Ex:- Ads, etc.)    
+            </main>
+    -->
+
+    <!-- Inside footer tag we insert:
+        Information about Copyright Rules
+        Important Page Links
+        Contact information        
+    -->
+
+
+    <header>
+        <nav>
+            <li><a href="#HTML">Why I Love HTML?</a></li>       <!-- How to make multiple headings of a page with a link -->
+            <li><a href="#Bootstrap">Why to use Bootstrap?</a></li>
+            <li><a href="#Contact">Contact Me</a></li>
+        </nav>
+    </header>
+
+    <br>
+    <hr>
+    
+    <main>
+        <section>
+            <div>       <!-- div is used to make a Block in HTML like Notion -->
+                <h1 id="HTML">Why I Love HTML?</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, magni inventore. Iusto praesentium officiis voluptatem, error officia ut necessitatibus, totam, molestias in saepe consequuntur tempora reprehenderit quos? Atque unde voluptas corporis dignissimos, reprehenderit quia at quaerat pariatur eius! Dolores, amet!</p>
+                <img src="Images/photo-1661123979300-df209622f05d.avif" alt="Monument Photo">
+            </div>
+            <!-- div is an example of Block Element -->
+    
+            <div>
+                <h1 id="Bootstrap">Why to use Bootstrap?</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt quas earum fuga unde similique quis adipisci ratione totam veritatis nulla.</p>
+                <img src="Images/photo-1661123979300-df209622f05d.avif" alt="Monument Photo">
+            </div>
+        </section>
+    
+        <br>
+        <br>
+    
+        <section>       
+            <!-- span is an inline element -->
+            <span>I am a Span Tag.</span>
+        </section>
+    
+        <br>
+    
+        <section>
+            <div>
+                Lorem ipsum, <span style="background-color: aquamarine;">dolor sit amet consectetur adipisicing elit. Enim voluptates atque saepe impedit</span> optio incidunt perspiciatis quis aliquid veritatis molestias, doloribus cupiditate cum velit! Nostrum, velit a corporis repellendus asperiores autem nisi eos aspernatur quam laboriosam, culpa vitae, nesciunt ab!
+                <img src="Images/photo-1661123979300-df209622f05d.avif" alt="Monument Photo">
+            </div>
+        </section>
+    </main>
+    
+    <br>
+    <hr>
+
+    <footer>
+        <div>
+            <h2 id="Contact"><u>Connect with Me</u></h2>
+            
+            <p>Email Id:- <a href="mailto:mymailadd@gmail.com">mymailadd@gmail.com</a></p>
+            <!-- by using mailto: if the person click on the link then the it will automatically redirect it to the default mail application of the system with auto type mail id -->
+
+            <p>Mobile no.:- <a href="tel:+919898989898">+91 98989898</a></p>
+            <!-- by using tell: if the person click on the link then the it will automatically redirect it to the default call application of the system with auto type number -->
+        </div>
+
+        <p class="center">Copyright &copy; Tanish Singhal</p>
+
+        <a href="#">Back To Top (Click Me)</a>
+    </footer>
+
+
+</body>
+
+</html>
