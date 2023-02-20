@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/x-icon" href="Images/download1.jpg">           <!-- This is how we can insert a favicon -->
+
+    <title>Images and Videoes</title>
+
+</head>
+
+<body>
+
+    <h1>Images, Videoes and iframe</h1>
+
+    <!-- Image Tag -->
+    <!-- Example of Absolute URl -->
+    <img src="https://images.unsplash.com/photo-1661130774347-f7529bb2009f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80"
+        alt="Car Image" width="121px">
+    <!-- In 'alt' we write something. alt hum use karte hai kyuki agar kisis wajah se image load nhi hui to ek text aajaye image wali jagah par. -->
+    <!-- But is highly recommended to adjust the image height with the help of CSS -->
+    <!-- Try this by editing the image URL. -->
+
+    <br>
+
+    <!-- Example of Relative URL -->
+    <img src="Images/indian.bike.jpg" alt="Bike Image" width="121px">
+    <!-- We use this image by downloading the image in the code folder. -->
+
+    <br>
+
+    <img src="Images/hello.jpg" alt="Photo nhi hai isliye alt wala text print ho rha hai. BTW neeche👇 wali photo ko click karo">
+
+    <br>
+
+    <a href="https://codewithharry.com" target="_blank"> <img src="Images/photo-1661123979300-df209622f05d.avif" alt="Harry's Website" width="442" height="658"></a>
+    <!-- We can put anything in the link tag whether it is text, image, etc. -->
+
+    <br>
+
+    <figure>
+        <img src="Images/download.jpg" alt="Hashira photo">
+        <figcaption>HASHIRA (Demon Slayer)</figcaption>
+    </figure>
+
+    <br>
+    <br>
+    <hr>
+    <!-- ---------------------------------------------------------------------------------------------------------------------------------------- -->
+    <br>
+
+    <video
+        src="Videos/'Ramayana - The Legend of Prince Rama' Trailer - 4K Digital Remaster Anime 2022 (Official) [42tDHKICVOM].mp4"
+        width="600" controls></video>
+    <!-- This is how we can embedded video from our computer to the HTML page -->
+
+    <br>
+    <br>
+    <hr>
+    <!-- ---------------------------------------------------------------------------------------------------------------------------------------- -->
+    <br>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/BsDoLVMnmZs" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    <!-- This can be done by open video click on share button then click on the option name "embedded" thn directly paste the embedded link in the vs code -->
+
+    <br>
+    <br>
+
+    <iframe src="https://www.bing.com" frameborder="0" width="800"></iframe>
+
+    <br>
+    <br>
+
+    <iframe src="https://www.wikipedia.com" frameborder="10" width="600"></iframe>
+    <!-- So "iframe tag" is used to make a copy of the website in your page -->
+    <!-- But some website don't allow to connect with iframe like google.com -->
+
+</body>
+
+</html>
