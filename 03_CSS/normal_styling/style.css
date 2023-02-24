@@ -1,0 +1,77 @@
+/*  Selectors in CSS
+        1. Simple Selector
+            a) Element Selector
+            b) Class Selector
+            c) ID Selector
+        2. Pseudo-class Selector
+        3. Multiple Selector
+        4. Universal Selector       (we apply change to whole document *{} )
+        5. Nested Selector
+        6. Attribute Selector                */
+
+/* Element Selector */
+h1 {
+    background-color: aqua;
+}
+
+/* Class Selector */
+.external {
+    color: rgb(40, 172, 40);
+    font-weight: bold;
+}
+
+/* ID Selector */
+#yoyo {
+    background-color: bisque;
+}
+
+/* Pseudo-Class Selector */
+h4:hover {
+    background-color: red;
+    font-size: 24px;
+}
+
+/* Multiple Selector */
+h5, h6 {
+    background-color: rgb(251, 255, 0);
+}   
+
+
+/* Specificity 
+=>  Tag selector        |
+=>  class               |
+=>  ID                  |
+=>  Inline CSS          V        */
+
+
+/*      Which properties are applying in this question ? 
+
+<div class="divc" id="divi"> Kya haal hai mere dost </div>
+
+<style>
+    #divi {
+        bg-color: yellow;
+    }
+    div {
+        bg-color: red;
+        color: blue;
+    }
+    .divc {
+        bg-color: orange;
+        font-size: large;
+    }
+</style>
+
+
+Ans))))   bg-color: yellow;         (because Specificity of id is higher as compare to all there)
+          color: blue;
+          font-size: large;
+
+*/
+
+.black {
+    background-color: #f6f7d7;
+    color: black;
+    border: 2px dotted black;
+    /* We can insert dotted, solid, etc kind of line */
+}
