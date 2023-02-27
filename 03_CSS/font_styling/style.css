@@ -1,0 +1,20 @@
+.content1 {
+    font-size: 25px;
+    font-style: italic;
+    font-weight: 800;
+    /* font-family: 'Courier New', Courier, monospace; */
+    /* Herarchy: Courier New -> Courier -> monospace */
+    font-family: 'Shantell Sans', cursive;
+
+    text-align: center;
+    text-decoration: underline wavy red;
+    text-transform: capitalize;
+
+    line-height: 200%;
+}
+
+.content2 {     /* This is how I can add external font from google font using link */
+    font-family: 'Shantell Sans', cursive;
+}
+
+/* Learn about Emphasis and important in CSS */
