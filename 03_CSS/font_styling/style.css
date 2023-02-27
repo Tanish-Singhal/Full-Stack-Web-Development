@@ -1,5 +1,7 @@
 .content1 {
-    font-size: 25px;
+    background-color: yellow;
+
+    font-size: 20px;
     font-style: italic;
     font-weight: 800;
     /* font-family: 'Courier New', Courier, monospace; */
@@ -11,10 +13,34 @@
     text-transform: capitalize;
 
     line-height: 200%;
+
+    height: 385px;
+    width: 250px;
+    display: inline-block;
 }
 
 .content2 {     /* This is how I can add external font from google font using link */
+    background-color: lightgreen;
+
     font-family: 'Shantell Sans', cursive;
+
+    height: 205px;
+    width: 170px;
+    display: inline-block;
 }
 
 /* Learn about Emphasis and important in CSS */
+
+/* 
+    display Tag
+        1. display: inline  (It is used to make two line display in two line)
+                            (It allocates the space according to the line size)
+                            (We cannot use height and width function while using inline tag. So that's why the content was display was the form of line not in Box.)
+                            (we cannot set top and bottom margin but we can set right and left margin)
+        2. display: block   (It is by default tag)
+                            (We can use height and width while using Block element)
+                            (We cannot two box or line side by side)
+        3. display: inline-block  (If we want to use inline element and we also want to use height and width element)
+        4. display: none         (element is removed from the document and the space is not blocked)
+        5. visibility: hidden    (element is hide from the document and the space is reserved)
+*/
