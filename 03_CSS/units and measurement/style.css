@@ -1,7 +1,58 @@
 /* Units in CSS 
-1. Absolute unit
-2. Percentage Unit
+1. Absolute unit :- px (1/96 of inch which is fixed only in css)
+2. Percentage Unit :- %
 3. Relative Unit
-    a) Relative to Font Size
-    b) Related to Document 
+    a) Relative to Font Size :- em, rem
+    b) Related to Document :- vw, vh
 */
+/*
+    em - unit relative to the parent font size
+    rem - unit relative to the root font size (<html>)
+    vw - unit relative to 1% viewport width
+    vh - unit relative to 1% viewport height
+    % - unit relative to the parent element
+*/
+
+/* Default font size of an HTML doc is 16px */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 15px;
+}
+
+.box {
+    font-size: 5px;
+}
+
+.box2 {
+    font-size: 4em;
+}
+
+.box3 {
+    font-size: 2rem;
+}
+
+.chair2 {
+    background-color: yellow;
+
+    height: 40vh;
+    width: 50vw;
+}
+
+.chair3 {
+    min-width: 5vw;
+    max-width: 60vw;
+
+    min-height: 5vh;
+    max-height: 50vh;
+
+    background-color: red;
+    color: white;
+
+    height: 100vh;
+    width: 150vw;
+}
