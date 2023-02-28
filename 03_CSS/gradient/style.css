@@ -1,0 +1,70 @@
+/* CSS Gradient 
+1. Linear Gradient :- goes donw/up/right/left/diagonally
+2. Radial Gradient :- goes in circular pattern like sun raise
+3. Conic Gradient :- roated around a center point
+*/
+
+/* in linear gradient we use 
+    to left, to right, to bottom, to top, to bottom right, to top left, 210deg, etc.
+*/
+
+
+/* LINEAR GRADIENT */
+.box {
+    border: 2px solid black;
+    height: 150px;
+    width: 300px;
+    font-weight: bold;
+    
+    background-image: linear-gradient(to top right, rgb(106, 255, 106), rgb(0, 191, 255), rgb(255, 255, 57));
+    background-image: linear-gradient(rgba(255,0,0,0), rgba(0,0,255,1));
+}
+
+
+.box2 {
+    border: 2px solid black;
+    height: 150px;
+    width: 300px;
+    font-weight: bold;
+    
+    background-image: linear-gradient(to bottom, orange, white, green);
+}
+
+
+/* RADIAL GRADIENT */
+.box3 {
+    border: 2px solid black;
+    height: 150px;
+    width: 300px;
+    font-weight: bold;
+
+    background-image: radial-gradient( rgb(61, 255, 61), rgb(57, 205, 255), rgb(255, 255, 109));
+}
+
+.box4 {
+    border: 2px solid black;
+    height: 150px;
+    width: 300px;
+    font-weight: bold;
+
+    background-image: radial-gradient(circle,rgb(61, 255, 61) 15%,
+                                            rgb(57, 205, 255) 50%,
+                                            rgb(255, 255, 109) 10%);
+}
+
+
+/* CONIC GRADIENT */
+.box5 {
+    height: 200px;
+    width: 200px;
+
+    background-image: conic-gradient(from 60deg, red, yellow, green, red);
+}
+
+.box6 {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+
+    background-image: conic-gradient(red 0deg, red 90deg, yellow 90deg, yellow 180deg, green 180deg, green 270deg, blue 270deg);
+}
