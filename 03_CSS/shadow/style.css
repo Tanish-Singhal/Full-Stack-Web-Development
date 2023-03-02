@@ -1,0 +1,25 @@
+/* Shadows in CSS
+   text-shadow: (horizontal distance) (Vertical distance) (blur intensity) (spread area of shadow) (color)
+*/
+
+h1 {
+    text-shadow: 4px 4px 10px red;
+    text-shadow: 4px 4px 10px red, 6px 6px 10px blue;   /* Adding mutiple shadow */
+}
+
+.box {
+    height: 200px;
+    width: 200px;
+    background-color: aqua;
+    border-radius: 20px;
+
+    box-shadow: 10px 10px 15px black, -10px -10px  15px rgb(255, 0, 0);     /* shadows to opposite direction */
+    box-shadow: inset 20px 20px 10px greenyellow;       /* we can add shadows inside the box */
+}
+
+
+blockquote {
+    padding: 20px;
+    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255),      /* Inside Shadow */
+      0.3em 0.3em 1em rgba(0, 0, 0, 0.3);                                                 /* Outside shadow */
+}
