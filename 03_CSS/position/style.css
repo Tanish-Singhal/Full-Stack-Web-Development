@@ -1,0 +1,71 @@
+/* Position Property
+1. Static   (Default)
+2. Relative
+3. Fixed
+4. Absolute (in absolute, all the other elements are behave like the absolute box was not there but the absolute box showing.) (element with absolute move with repect to the nearest relative elemnt to it.)
+5. Sticky
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    height: 100vh;
+    width: 100vw;
+}
+
+.background {
+    margin: 50px;
+}
+
+.box {
+    height: 100px;
+    width: 100px;
+    background-color: aqua;
+    border: 1px solid black;
+
+    display: inline-block;
+}
+
+#box1 {
+    position: relative;
+    top: 50px;
+    left: 60px;
+}
+
+#box3 {
+    position: fixed;    /* now the space of C was occupied by D and C got stick both horizontally and vertically */
+}
+
+.background2 {
+    height: 40vh;
+    width: 100vw;
+    background-color: yellow;
+
+    position: relative;     /* It is important */
+}
+
+.boxes {
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+    background-color: aqua;
+
+    position: absolute;
+    /* bottom: 0;
+    top: 0;
+    left: 0; */
+    right: 0;       /* This box will move with respective to the whole html page or background1 if we will not make the background2 (position relative) */
+}
+
+nav {
+    background-color: black;
+    color: white;
+
+    position: sticky;
+    top: 0;             /* Now this will always stick at top 0 */
+    /* But some content see above it while scrolling so we will make "z-index" of nav higher than other */
+    z-index: 1;     /* As all other z-index is 0 by default */
+}
