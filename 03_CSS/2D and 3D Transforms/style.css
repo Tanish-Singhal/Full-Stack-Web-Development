@@ -1,0 +1,26 @@
+/* 2D Transforms
+1. translate
+2. rotate
+3. scale
+4. skew
+5. matrix
+*/
+
+.box {
+    height: 100px;
+    width: 100px;
+    margin: 300px;
+    background-color: aqua;
+
+    /* transform: translate(100px, 50px); */
+    /* transform: rotate(45deg); */
+    /* transform: scale(2,5); */
+    transform: skew(45deg);
+}
+
+.box2 > div{
+    height: 100px;
+    width: 100px;
+    background-color: aqua;
+    border: 2px solid black;
+}
