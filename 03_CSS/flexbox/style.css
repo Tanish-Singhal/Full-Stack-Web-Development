@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 /* Parent container in Flexbox is called Flex */
 /* Properties :- 
 1. flex-direction
@@ -5,7 +9,7 @@
 3. flex-flow
 4. justify-content      It will apply with repect to horizontal axis
 5. align-items          It will apply with repect to vertical axis
-6. align-content
+6. align-content        It will handle the space between two rows
 */
 
 
@@ -19,8 +23,8 @@
     /* flex-direction: column; */
 
 
-    /* Now if we squence our window then the elements shifts on next line according to the size */
-    flex-wrap: wrap;        /* default value is nowrap */
+    /* Now if we squence our window then the elements shifts on next line so that its width get preserved */
+    /* flex-wrap: wrap;        default value is nowrap */
 
     /* flex-flow: row wrap; */      /* Shorthand notation */
 
@@ -39,7 +43,15 @@
     /* align-items: stretch; */
     /* align-items: baseline;      Now all the different sizes boxes ahve the same baseline */
 
-    gap: 10px;      /* By this we can add gap in between all the boxes */
+    /* gap: 10px;      By this we can add gap in between all the boxes */
+
+    /* If we want to handle the space between two rows (if we squeze the window so that two rows appear) */
+    /* align-content: flex-start; */
+    /* align-content: flex-end; */
+    /* align-content: center; */
+    /* align-content: space-around; */
+    /* align-content: space-between; */
+    align-content: space-evenly;
 }
 
 
@@ -47,15 +59,38 @@
 
 /* Nested items in flexbox is called flex-items */
 /* Properties :-
-1. order
-2. flex-grow
-3. flex-shrink
-4. flex-basis
-5. flex
-6. align-self
+1. order            make the position of the element at the last
+2. flex-grow        element will grow till all the remaining space gets covered in the row
+3. flex-shrink      decide the shrinking speed of the box (more the value more the shrinking speed)
+4. flex-basis       change the size of the box
+5. flex             shorthand notation of above four
+6. align-self       only one item align
 */
 
 .box {
     border: 1px solid black;
     background-color: aquamarine;
+
+    /* width: 100px;       overflow content get out of the box */
+    flex-basis: 100px;      /* oveflow content get adjusted in the box */ 
+
+    /* flex-grow: 1;   all the elments grow equally */
+}
+
+#box1 {
+    order: 2;   /* By default the order of the element is zero */
+
+    flex-shrink: 2;     /* to see it remove the flex wrap property. default value is one */
+}
+
+#box3 {
+    order: 8;
+
+    flex-grow: 2;   /* By default the flex-grow is zero */
+}
+
+#box2 {
+    order: 3;
+
+    align-self: stretch;
 }
