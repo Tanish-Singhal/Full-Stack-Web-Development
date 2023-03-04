@@ -1,0 +1,61 @@
+/* Parent container in Flexbox is called Flex */
+/* Properties :- 
+1. flex-direction
+2. flex-wrap
+3. flex-flow
+4. justify-content      It will apply with repect to horizontal axis
+5. align-items          It will apply with repect to vertical axis
+6. align-content
+*/
+
+
+.container {
+    height: 400px;
+    border: 2px solid green;
+
+    display: flex;
+    
+    flex-direction: row;          /* by default the main axis in flexbox in horizontal axis, So that's why the box are in vertical direction */
+    /* flex-direction: column; */
+
+
+    /* Now if we squence our window then the elements shifts on next line according to the size */
+    flex-wrap: wrap;        /* default value is nowrap */
+
+    /* flex-flow: row wrap; */      /* Shorthand notation */
+
+    /* It will apply with repect to horizontal axis */
+    /* justify-content: flex-start; */
+    /* justify-content: end; */
+    justify-content: center;
+    /* justify-content: space-around; */
+    /* justify-content: space-between; */
+    /* justify-content: space-evenly; */
+    
+    /* It will apply with repect to vertical axis */
+    /* align-items: flex-start; */
+    /* align-items: flex-end; */
+    align-items: center;
+    /* align-items: stretch; */
+    /* align-items: baseline;      Now all the different sizes boxes ahve the same baseline */
+
+    gap: 10px;      /* By this we can add gap in between all the boxes */
+}
+
+
+
+
+/* Nested items in flexbox is called flex-items */
+/* Properties :-
+1. order
+2. flex-grow
+3. flex-shrink
+4. flex-basis
+5. flex
+6. align-self
+*/
+
+.box {
+    border: 1px solid black;
+    background-color: aquamarine;
+}
