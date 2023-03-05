@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&family=Tilt+Warp&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+}
+
+.wrapper {
+    perspective: 10px;      /* because we have to play 3D game, as the man is far away from the mountain */
+}
+
+.container {
+    position: relative;
+}
+
+img {
+    position: relative;
+}
