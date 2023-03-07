@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/x-icon" href="Images/download1.jpg">
+
+    <title>List</title>
+
+</head>
+
+<body>
+
+    <h1><u>List in HTML</u></h1>
+
+    <h4><u>Unorderd List</u></h4>
+    <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Services</li>
+        <li>Contact Us</li>
+    </ul>
+
+    <br>
+
+    <h4><u>Orderd List</u></h4>
+    <ol>
+        <li>Home</li>
+        <li>About</li>
+        <li>Services</li>
+        <li>Contact Us</li>
+    </ol>
+
+    <br>
+    <hr>
+    <!-- ---------------------------------------------------------------------------------------------------------------------------------------- -->
+    <br>
+
+    <!-- We can do further customization in (ol list) but not in (ul list) -->
+    <ol type="I"> <!-- Types Roman Numbers -->
+        <li>Chemistry
+            <ol>
+                <li>Thermodynaics</li>
+                <li>Atoms and Molecules</li>
+                <li>Metallurgy</li>
+            </ol>
+        </li>
+        <li>Mathematics
+            <ul> <!-- Display content in the form of unordered list -->
+                <li>Differentiation</li>
+                <li>Integration</li>
+                <li>Trigonometry</li>
+            </ul>
+        </li>
+        <li>English
+            <ol>
+                <li>Verbs</li>
+                <li>
+                    <h1>Noun</h1>
+                </li>
+                <li>Pronoun</li>
+            </ol>
+        </li>
+        <li>Physics
+            <ol type="i" reversed="true"> <!-- It reversed the numbering -->
+                <li>Kinamatics</li>
+                <li>Thermodynaics</li>
+                <ol start="3"> <!-- It start the numbering rom 3 onversed -->
+                    <li>Very lenghtly Chapter</li>
+                    <li>Very difficult Chapter</li>
+                </ol>
+                <li>Wave Optics</li>
+            </ol>
+        </li>
+    </ol>
+
+    <br>
+    <br>
+    <hr>
+    <!-- ---------------------------------------------------------------------------------------------------------------------------------------- -->
+    <br>
+
+    <!-- Mainly don't use "Description List" nor "Unorderd List" to mainly give the indentation. It was a bad pratice. -->
+    <!-- Instead use the CSS margin Property -->
+    <h4><u>Description List</u></h4>
+    <dl>
+        <dt>Firefox</dt>
+        <dd>
+            A free, open source, cross-platform, graphical web browser developed by the
+            Mozilla Corporation and hundreds of volunteers.
+        </dd>
+        <dd>
+            The Red Panda also known as the Lesser Panda, Wah, Bear Cat or Firefox, is a
+            mostly herbivorous mammal, slightly larger than a domestic cat (60 cm long).
+        </dd>
+
+        <br>
+
+        <dt>Firefox</dt>
+        <dd>
+            A free, open source, cross-platform, graphical web browser developed by the
+            Mozilla Corporation and hundreds of volunteers.
+        </dd>
+        <dd>
+            The Red Panda also known as the Lesser Panda, Wah, Bear Cat or Firefox, is a
+            mostly herbivorous mammal, slightly larger than a domestic cat (60 cm long).
+        </dd>
+    </dl>
+
+    <br>
+
+</body>
+
+</html>
