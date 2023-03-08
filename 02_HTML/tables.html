@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/x-icon" href="Images/download1.jpg">
+
+    <title>Tables</title>
+
+    <style>
+        table,
+        th,
+        td {
+            border: 2px solid black;
+            /* border-collapse: collapse; */
+            text-align: center;
+        }
+
+        .ignore {
+            border: 0px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1><u>Tables in HTML</u></h1>
+    <!-- th => Heading -->
+    <!-- td => Body -->
+
+    <br>
+
+    <h2><u>Max Score in Cricket</u></h2>
+    <table>
+
+        <colgroup>
+            <col span="1"> <!-- By this skip the column from colouring -->
+            <col span="1" style="background-color: blanchedalmond;">
+            <col span="1">
+            <col span="1">
+            <col span="1" style="background-color: blanchedalmond;">
+            <col span="1">
+        </colgroup>
+
+        <thead>
+            <caption><b><u>Max Score Scored by Different Players</u></b></caption>
+            <tr style="background-color: aqua;">
+                <th>S.No</th>
+                <th>Player name</th>
+                <th>Max Score</th>
+                <th>Game</th>
+                <th colspan="2">Parents</th>
+                <!-- colspan is used to merge two rows under one Heading
+                     Like we merge father and mother name together under parents columns -->
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Sachin</td>
+                <td>123</td>
+                <td>Pak</td>
+                <td rowspan="4">Mr.</td>
+                <td rowspan="4">Mrs.</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Rohit</td>
+                <td>278</td>
+                <td>Sri Lanka</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Virat</td>
+                <td>150</td>
+                <td rowspan="2">England</td>
+            </tr>
+            <td>4</td>
+            <td>Ms Dhoni</td>
+            <td>100</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <th colspan="1" class="ignore"></th>
+                <th colspan="2">Coach</th>
+                <td colspan="2">Rahul Dravid</td>
+                <!-- We can also use rowspan also when needed -->
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+
+</html>
