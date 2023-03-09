@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/x-icon" href="Images/download1.jpg">
+
+    <title>Forms</title>
+
+</head>
+
+<body>
+
+    <h1><u>Forms in HTML</u></h1>
+
+    <form action="https://www.thecodehelp.in/">
+        <!-- But in action we have to write the file name (text file) in which we can store all the information of the user who filled the form -->
+
+        <input type="checkbox" name="" value="">
+        <input type="radio" name="" value="">
+
+        <br><br>
+
+        <label for="Name">Your Name: </label>
+        <input type="text" placeholder="Name Please" name="" value="">
+        <label for="Gender1">
+            <input type="radio" name="Gender" value="" id="Gender1">Male
+        </label>
+        <label for="Gender2">
+            <input type="radio" name="Gender" value="" id="Gender2">Female
+        </label>
+        <label for="Gender3">
+            <input type="radio" name="Gender" value="" id="Gender3">Other
+        </label>
+        <!-- When two radio button name are same then only one radio button will be clicked. -->
+        <!-- If 'for' and 'id' are both same, then we can select the radio button by simply click on the text written on it -->
+        <!-- Otherwise we have to click on the radio button to select the button -->
+        <!-- We use name to tell the backed to arrange the data (tell in detail in Backend Part) -->
+
+        <br>
+
+        <label>Your Email: </label>
+        <input type="email" placeholder="Email Please" name="" value="">
+
+        <br>
+
+        <label>Password: </label>
+        <input type="password" placeholder="Password Please" name="" value="">
+
+        <br>
+
+        <label>Age</label>
+        <input type="range" name="" value="">
+
+        <br>
+
+        <label>Profile Photo</label>
+        <input type="file" name="" value="">
+
+        <br><br>
+
+        <input type="submit" name="">
+        <!-- use to make buttons. Only use type="submit" in the forms only (recommended) -->
+
+        <br><br><br>
+
+        <input type="checkbox" name="Canteen" id="foodcanteen" class="red">
+        <label for="foodcanteen">Want Food Canteen Card</label>
+
+        <br><br>
+
+        <textarea name="Explain" id="Explain" cols="30" rows="10"
+            placeholder="Explain why you want to join?"></textarea>
+
+        <br><br>
+
+        <!-- Most people give same 'name' and 'id' to there tag -->
+        <select name="car" id="car">
+            <option name="no car">Section your Car</option>
+            <option name="XUV 700">XUV 700</option>
+            <option name="ScorpioN">ScorpioN</option>
+            <option name="TATA Curve">TATA Curve</option>
+            <option name="BE 09">BE 09</option>
+        </select>
+
+        <button>Get Started</button>
+        <!-- USe button tag to make the buttons everywhere other than forms -->
+
+        <p><input type="color" name="" value=""></p>
+
+    <form>
+
+    <p>Here we can see that our form was not structured (see "your email" and "password")</p>
+    <p>To structure we use Tables</p>
+
+    <table>
+        <form>
+            <tr>
+                <td>
+                    <label for="Name">Your Name: </label>
+                </td>
+                <td>
+                    <input type="text" placeholder="Name Please" name="" value="">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Your Email: </label>
+                </td>
+                <td>        
+                    <input type="email" placeholder="Email Please" name="" value="">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Password: </label>
+                </td>
+                <td>
+                    <input type="password" placeholder="Password Please" name="" value="">
+                </td>
+            </tr>
+        </form>
+    </table>
+    <button>Submit Me</button>
+
+</body>
+
+</html>
