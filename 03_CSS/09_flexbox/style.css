@@ -1,3 +1,6 @@
+/* By Default - Horizontal Axis (Main Axis)
+                Vertical Axis   (Cross-Axis) */
+
 * {
     box-sizing: border-box;
 }
@@ -21,10 +24,14 @@
     
     flex-direction: row;          /* by default the main axis in flexbox in horizontal axis, So that's why the box are in vertical direction */
     /* flex-direction: column; */
+    /* flex-direction: row-reverse; */
+    /* flex-direction: column-reverse; */
 
 
     /* Now if we squence our window then the elements shifts on next line so that its width get preserved */
     /* flex-wrap: wrap;        default value is nowrap */
+    /* flex-wrap: nowrap; */
+    /* flex-wrap: wrap-reverse; */
 
     /* flex-flow: row wrap; */      /* Shorthand notation */
 
@@ -74,19 +81,22 @@
     /* width: 100px;       overflow content get out of the box */
     flex-basis: 100px;      /* oveflow content get adjusted in the box */ 
 
-    /* flex-grow: 1;   all the elments grow equally */
+    /* flex-grow: 1;   all the elments grow equally covering full width */
 }
 
 #box1 {
     order: 2;   /* By default the order of the element is zero */
 
     flex-shrink: 2;     /* to see it remove the flex wrap property. default value is one */
+                        /* It will change the shrinking speed of the box */
 }
 
 #box3 {
     order: 8;
 
     flex-grow: 2;   /* By default the flex-grow is zero */
+
+    align-self: flex-end ;
 }
 
 #box2 {
