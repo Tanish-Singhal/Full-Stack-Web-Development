@@ -1,9 +1,13 @@
+* {
+    box-sizing: border-box;
+}
+
 /* 2D Transforms
-1. translate
-2. rotate
-3. scale
-4. skew
-5. matrix
+1. translate    (To move)
+2. rotate       (To rotate)
+3. scale        (To make it bigger)
+4. skew         (To tilt)
+5. matrix       (Shorthand property)
 */
 
 .box {
@@ -13,14 +17,37 @@
     background-color: aqua;
 
     /* transform: translate(100px, 50px); */
+
     /* transform: rotate(45deg); */
-    /* transform: scale(2,5); */
-    transform: skew(45deg);
+    /* transform: rotate(-45deg); */
+    
+    transform: scale(2, 5);
+    /* transform: scaleX(2);
+    transform: scaleY(5); */
+    
+    /* transform: skew(45deg); */
 }
+
+/* 3D Transforms (in this z-index is added)
+1. 
+2.
+3.
+4.
+5.
+*/
 
 .box2 > div{
     height: 100px;
     width: 100px;
     background-color: aqua;
-    border: 2px solid black;
+    border: 1px solid black;
+}
+
+.translated {
+    transform: perspective(15px) translateZ(-10px);
+}
+
+.scaled {
+    margin-left: 200px;
+    transform: perspective(105px) scaleZ(2.5) rotateY(20deg);
 }
