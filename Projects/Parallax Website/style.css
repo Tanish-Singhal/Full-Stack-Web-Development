@@ -3,43 +3,31 @@
 /* * {
     margin: 0;
     padding: 0;
+
     box-sizing: border-box;
 } */
 
-.wrapper {
-    /* overflow-x: hidden; */
-    overflow-y: auto;
-    
-    perspective: 100px;      /* because we have to play 3D game, as the man is far away from the mountain */
-    
+#wrapper {
+    height: 100vh;
+    overflow-x: hidden;     /* So that the image will not scroll in x direction */
+    perspective: 10px;
 }
 
 .container {
+    height: 100%;
     position: relative;
-    height: 100vh;
-    width: 100vw;
-
     display: flex;
+
     justify-content: center;
     align-items: center;
-
     transform-style: preserve-3d;
     z-index: -1;
-}
-
-.background {
-    transform: translateZ(-40px) scale(2);
-}
-
-.foreground {
-    transform: translateZ(-20px) scale(1.5);
 }
 
 .background, .foreground {
     position: absolute;
     height: 100%;
     width: 100%;
-    z-index: -1;
 
-    object-fit: cover ;
+    z-index: -1;
 }

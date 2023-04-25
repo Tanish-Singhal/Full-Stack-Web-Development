@@ -17,6 +17,7 @@ div {
 }
 
 .background {
+    background-color: #ffffff7e;
     margin: 50px;
 }
 
@@ -39,8 +40,8 @@ div {
     position: fixed;    /* now the space of C was occupied by D and C got stick both horizontally and vertically */
 }
 
-.background2 {
-    height: 40vh;
+.background3 {
+    height: 110vh;
     width: 100vw;
     background-color: yellow;
 
@@ -57,7 +58,7 @@ div {
     /* bottom: 0;
     top: 0;
     left: 0; */
-    right: 0;       /* This box will move with respective to the whole html page or background1 if we will not make the background2 (position relative) */
+    right: 0;       /* This box will move with respective to the whole html page or background1 if we will not make the background3 (position relative) */
 }
 
 nav {
@@ -68,4 +69,8 @@ nav {
     top: 0;             /* Now this will always stick at top 0 */
     /* But some content see above it while scrolling so we will make "z-index" of nav higher than other */
     z-index: 1;     /* As all other z-index is 0 by default */
+}
+
+li {
+    display: inline;
 }
