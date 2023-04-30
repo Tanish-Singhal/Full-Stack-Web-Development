@@ -1,33 +1,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&family=Tilt+Warp&display=swap');
 
-/* * {
+/* Mostly this confriguration used in all the websites */
+* {                     
     margin: 0;
     padding: 0;
 
     box-sizing: border-box;
-} */
+}
 
 #wrapper {
+    /* as we wanted to make the whole website inside the wrapper so....... */
     height: 100vh;
-    overflow-x: hidden;     /* So that the image will not scroll in x direction */
-    perspective: 10px;
+    overflow-y: auto;   /* as we wanted to scroll the website in y direction */
+    overflow-x: hidden; /* as we wanted to stop the scrolling of the website in x direction */
+
+    /* as we wanted to make distance between man and the mountain (3D game) */
+    perspective: 10px;  /* any value */
+
+    
+
 }
 
 .container {
-    height: 100%;
+    /* now we wanted to overlap the images and the text */
+    /* so we use "absolute" but it move with respect to nearest "non static" (relative) element */
     position: relative;
-    display: flex;
+    height: 100%;
 
+    /* as we wanted to make the "Adventure" text at center so.........*/
+    display: flex;
     justify-content: center;
     align-items: center;
-    transform-style: preserve-3d;
-    z-index: -1;
-}
-
-.background, .foreground {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-
-    z-index: -1;
 }
