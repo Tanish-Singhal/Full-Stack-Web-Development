@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&family=Tilt+Warp&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
 /* Mostly this confriguration used in all the websites */
 * {                     
@@ -16,9 +16,6 @@
 
     /* as we wanted to make distance between man and the mountain (3D game) */
     perspective: 10px;  /* any value */
-
-    
-
 }
 
 .container {
@@ -31,4 +28,98 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    /* as abovw I on the 3D game */
+    transform-style: preserve-3d;
+
+    /* as i want to make the layer of Adventure on the top of both the images */
+    z-index: -1;    /* Default value of z-index is 1 */
+}
+  
+.background, .foreground {
+    /* as i want to overlap the images */
+    position: absolute;
+    height: 100%;
+    width: 100%;
+
+    /* It will automatically fit the images and video so it don't look stretch */
+    object-fit: cover;
+
+    /* as i want to make the layer of Adventure on the top of both the images */
+    /* z-index: -1;    Default value of z-index is 1 */
+}
+
+.background {
+    transform: translateZ(-80px) scale(9);   /* Distance to which my mountain shgo backward */
+    z-index: -1;    
+}
+
+.foreground {
+    transform: translateZ(-20px) scale(3);   /* Distance to which my mountain shgo backward */
+}
+
+h1 {
+    position: absolute;
+    top: 5rem;
+    font-family: poppins, 'sans-serif';
+    font-size: 10rem;
+    letter-spacing: 4px;
+    color: white;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+section {
+    background-color: rgb(45, 45, 45);
+    font-family: poppins, 'san-serif';
+    font-size: 24px;
+    color: white;
+    padding: 5rem 0;
+}
+
+.secHeading {
+    font-size: 5rem;
+    padding: 0 10rem;
+}
+
+/* These are another method to apply images (but the background image tag has better functionality and printing quality */
+.bg1 {
+    background-image: url(Images/sport-1.jpg);
+}
+
+.bg2 {
+    background-image: url(Images/sport-2.jpg);
+}
+
+.bg3 {
+    background-image: url(Images/sport-3.jpg);
+}
+
+.bg {
+    /* because i want to overlap the word "BIKING', 'PARA GLIDING', "SURFING" */
+    position: relative;     /* so that why i make the position of .bg relative so that i absolut text move according to it */
+    
+    width: 100%;                    /* so that it cover full width */
+    background-attachment: fixed;   /* so that images can move */
+    background-size: cover;         /* fully cover the size with image maintaing its aspect ratio*/
+    background-position: center;
+
+    height: 500px;
+}
+
+.desc {
+    position: absolute;
+    background-color: white;
+    padding: 0.5rem 2.5rem;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: black;
+    font-size: 3.5rem;
+    font-weight: 600;
+}
+
+.text {
+    font-size: 1.5rem;
+    padding: 0 10rem;
+    margin: 5rem 0;
 }
