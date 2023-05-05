@@ -8,6 +8,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 #wrapper {
     /* as we wanted to make the whole website inside the wrapper so....... */
     height: 100vh;
