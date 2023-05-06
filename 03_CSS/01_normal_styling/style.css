@@ -1,3 +1,9 @@
+:root {         /* This is how we declare global scope in CSS */
+    /* here we assign a variable name of a random color */
+    --aqua-green: #00ffaa;      /* to make a variable name forst we have to add "--" in starting */
+}
+
+
 /*  Selectors in CSS
         1. Simple Selector
             a) Element Selector
@@ -75,3 +81,22 @@ Ans))))   bg-color: yellow;         (because Specificity of id is higher as comp
     border: 2px dotted black;
     /* We can insert dotted, solid, etc kind of line */
 }
+
+
+/* when we make coustom color which don't have a name then we can name it by assigning it a variable name */
+.local_variable {
+    --blue-voilet: #6105f5;
+
+    /* Now this blue-voilet colour now use in this local scope only */
+    background-color: var(--blue-voilet);
+    color: white;
+}
+
+.global_variable {
+    /* to make a variable we have to put it inside "root:" element */
+    /* see top of the page */
+    background-color: var(--aqua-green);
+}
+
+/* But we can also make a global veriable inside universal selector "*" but we don't do that? */
+/* because when we define something inside "*" then it will apply on all the element so it will make the rendering time of the more */
