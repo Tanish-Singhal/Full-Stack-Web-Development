@@ -15,7 +15,7 @@ html {
 #wrapper {
     /* as we wanted to make the whole website inside the wrapper so....... */
     height: 100vh;
-    /* overflow-y: auto;   as we wanted to scroll the website in y direction */
+    overflow-y: auto; /* as we wanted to scroll the website in y direction */
     overflow-x: hidden; /* as we wanted to stop the scrolling of the website in x direction */
 
     /* as we wanted to make distance between man and the mountain (3D game) */
