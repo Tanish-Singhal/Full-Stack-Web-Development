@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+/* Mostly this confriguration used in all the websites */
+* {                     
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#wrapper {
+    /* as we wanted to make the whole website inside the wrapper so....... */
+    height: 100vh;
+    overflow-y: auto; /* as we wanted to scroll the website in y direction */
+    overflow-x: hidden; /* as we wanted to stop the scrolling of the website in x direction */
+}
+
+.container {
+    height: 100%;
+    max-width: 1200px;  /* the block can extend upto 1200px */
+    margin: 0px auto;     /* this will put the margin in left and right side as the content will automatically comes to center */
+    padding: 20px;
+}
+
+.container h1 {
+    margin: 20px 0;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: poppins, 'san-serif';
+    font-size: 3rem;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;    /* if not there there then all the the images come side by side */
+    justify-content: space-between;
+}
+
+.card {
+    width: 32%;         /* Rest 4% space is for spacing */
+    position: relative; /* Because we want to overlap the "Image 1" text on the picture */
+    margin-bottom: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card img {
+    height: 100%;
+    width: 100%;
+    filter: grayscale(100%);    /* Makes the image black and white */
+    box-shadow: 0 0 20px #333;
+    object-fit: cover;
+}
+
+.card:hover {
+    transform: scale(1.03);
+    filter: drop-shadow(0 0 10px #333);     /* Another form to add shadow */
+    transition: 0.5s;       /* After how much time the "transform" and "drop-shadow" will apply */
+}
+
+.card:hover img {
+    filter: grayscale(0%);      /* Make the images coloured */
+}
+
+.card figcaption {
+    position: absolute;     /* */
+    bottom: 0px;
+    left: 0px;
+    padding: 25px;
+    height: 28%;
+    width: 100%;
+    font-family: poppins, 'san-serif';
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    opacity: 0;
+    border-radius: 0 0 10px 10px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+    transition: 0.5s;
+}
+
+.card:hover figcaption {
+    opacity: 1;
+    transform: scale(1.03);
+}
