@@ -1,0 +1,42 @@
+.container {
+    height: 500px;
+    width: 500px;
+    background-color: black;
+    border: 4px solid red;
+    display: flex;
+}
+
+.box {
+    height: 150px;
+    width: 150px;
+    margin: 20px;
+    border: 4px solid rgb(0, 38, 255);
+    background-color: rgb(255, 238, 0);
+    
+    /* To make the transition smooth */
+    /* transition: 1s; */
+
+    /* transition: all; */
+    /* But it is a bad practise because it require performance hungry */
+    
+    /* transition-property: background-color; */
+    /* transition-delay: 1s; */
+
+    /* ease - specifies a transition effect with a slow start, then fast, then end slowly (this is default)
+    linear - specifies a transition effect with the same speed from start to end
+    ease-in - specifies a transition effect with a slow start
+    ease-out - specifies a transition effect with a slow end
+    ease-in-out - specifies a transition effect with a slow start and end
+    cubic-bezier(n,n,n,n) - lets you define your own values in a cubic-bezier function */
+    
+    /* Trnasition short hand property */
+    /* transition: <property> <duration> <transition timimg function> <delay>; */
+    /* transition: transform 1s ease 2s; */
+    transition: all 1s ease 2s;
+    /* If we use more than one property */
+}
+
+.box:hover {
+    background-color: aqua; 
+    transform: translatex(300px) rotate(180deg);
+}
