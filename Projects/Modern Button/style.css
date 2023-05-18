@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#wrapper {
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    background-color: orangered;
+    color: white;
+    padding: 1rem 2rem;
+
+    font-family: poppins, 'san-serif';
+    font-size: 20px;
+    font-weight: bold;
+    box-shadow: 5px 5px 7px 0px #0000003f;
+
+    position: relative;
+
+    z-index: 1;     /* to make the Hover Me! text upwards */
+}
+
+/* "Before pseudo selector"
+        You can add something before the original content
+
+    "After pseudo selector"
+        You can add something after the original content
+*/
+
+.button::before {       /* This is called before pseudo selector */
+    content: "";     /*  We don't want any content before HOVER ME! */
+    background-color: #000000;
+
+    /* we want to fill the box with black colour when it is hover */
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+
+    /* at starting we do not want to see the black colour */
+    transform: scaleX(0);
+    transform-origin: left;     /* we want to scale the black colour from left side */
+    transition: all 1s;
+    z-index: -1;
+}
+
+/* now when we hover on the button then the scale of the bore slide show up */
+.button:hover::before {
+    transform: scaleX(1);
+}
