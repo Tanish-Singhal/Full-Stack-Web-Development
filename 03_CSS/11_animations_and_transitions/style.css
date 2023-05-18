@@ -1,5 +1,11 @@
+*{
+    box-sizing: border-box;
+    background-color: black;
+}
+
+/* Transition */
 .container {
-    height: 500px;
+    height: 300px;
     width: 500px;
     background-color: black;
     border: 4px solid red;
@@ -34,9 +40,74 @@
     /* transition: transform 1s ease 2s; */
     transition: all 1s ease 2s;
     /* If we use more than one property */
+
+    /* You can also create your own timing function (bezier curve) using inspect */
 }
 
 .box:hover {
     background-color: aqua; 
     transform: translatex(300px) rotate(180deg);
 }
+
+
+/* Animation */
+.container2 {
+    width: 1500px;
+    height: 300px;
+    background-color: black;
+    border: 4px solid yellow;
+}
+
+.box2 {
+    height: 200px;
+    width: 200px;
+    color: white;
+    border: 4px solid aqua;
+    margin: 20px;
+
+    animation-name: tanish;
+    animation-duration: 3s;                 /* animation will work for 3sec */
+    animation-timing-function: linear;     /* animation starting is slow */
+    animation-delay: 1s;                    /* animation will stat working after 1sec of reloading */
+    animation-iteration-count: infinite;           /* the animation will work 4 times */
+    animation-direction: alternate;
+    animation-fill-mode: forwards;          /* when first animation is complete then the animation is stop at the last (for this animation-iteration-count should be a number */
+    
+    /* Shorthand Property */
+    /* animation: <name> <duration> <timing-function> <delay> <iteration-count> <direction> <fill-mode>; */
+    /* animation: Tanish 3s ease-in 1s 4 normal ; */
+}
+
+@keyframes tanish {     /* If you want to tell the starting, in between and ending state of the nimation then you have to write it inside the keyframes */
+    
+    from {      /* Starting Point */
+        width: 100px;
+    }
+
+    to {        /* Ending Point */
+        width: 1000px;
+    }
+}
+
+/* There is an another methos to write keyframes */
+/* @keyframes tanish {
+    0% {
+        width: 100px;
+        background-color: orangered;
+    }
+
+    30% {
+        width: 300px;
+        background-color: yellow;
+    }
+
+    60% {
+        width: 600px;
+        background-color: blueviolet;
+    }
+
+    100% {
+        width: 1000px;
+        background-color: greenyellow;
+    }
+} */
