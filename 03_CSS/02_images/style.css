@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+  
+body {
+    background-image: url(images/download2.jfif);
+    color: yellow;
+    background-repeat: repeat-y;
+    /*      we can also use 
+                     repeat x (To repeat Image in x direction)
+                     repeat-y (To repeat Image in y direction)
+                     no-repeat (To display the picture only one time)
+                     space (if some picture display in half then we use space operation then it will not display the half image while it display images with equally space distributed)
+                     round (It will display image such as no image will be cutt at edges)
+    
+    background-size: cover;     (Fits and no empty space remians without changing its aspect ratio)
+                     contain;   (Fits and images is fully visible)
+                     auto       (Display its original size)
+                     {{width}}; (Set width and Height will set automatically)
+                     {{height}} {{width}};  (Set width and height both)
+    */
+      
+    /* background-position: center; */
+
+}
+  
+.hello {
+    background-image: url(images/download.jfif);
+    color: black;
+    height: 450px;
+    /* It is used to increase the height of the line */
+  
+    background-repeat: round;
+      
+    /* background-attachment: fixed;   it will fixed the background images and all the other content will scroll */
+}
+  
+.image {
+    background-image: url(images/download2.jfif);
+}
