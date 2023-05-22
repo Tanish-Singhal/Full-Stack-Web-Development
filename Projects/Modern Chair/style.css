@@ -1,16 +1,63 @@
-* {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --baby-pink: #f1a9a9;
+    ---dark-baby-pink: #e66767;
+    --white: #ffffff;
+}
+
+*,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-:root {
-    --baby-pink: #f1a9a9;
-    ---dark-baby-pink: #e66767;
-}
-
 #wrapper {
     height: 100vh;
     width: 100vw;
-    background-image: linear-gradient(196deg, var(--baby-pink), var(---dark-baby-pink));
+
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.7;
+    color: var(--white);
+    background-color: #1f2029;
+    
+    overflow-y: auto;
+    overflow-x: hidden;
 }
+
+p {
+    font-size: 16px;
+}
+
+.wrapper {
+    position: relative;
+    display: block;
+    overflow: hidden;
+}
+
+.section2 {
+    position: relative;
+    max-width: calc(100% - 40px);
+    width: 860px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product-info {
+    position: relative;
+    display: block;
+}
+
+/* This is an attribute selector. This will selct all the tag which has type="radio" in it */
+[type="radio"]:checked,
+[type="radio"]:not(:checked) {
+    position: absolute;
+    visibility: hidden;     /*This will hide the radio button circle */
+}
+
+/* Adjacent Sibling Selector */
+/* The + selector is used to selct an element that is directly after another specfic element. */
