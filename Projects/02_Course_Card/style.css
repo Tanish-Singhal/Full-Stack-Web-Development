@@ -13,6 +13,15 @@ html {
   scroll-behavior: smooth;
 }
 
+.wrapper {
+  height: 100vh;
+  width: 100vw;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .card {
   overflow: hidden;
 
