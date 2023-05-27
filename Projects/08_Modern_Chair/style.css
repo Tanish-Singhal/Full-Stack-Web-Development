@@ -13,3 +13,67 @@
     box-sizing: border-box;
 }
 
+#wrapper {
+    /* as we wanted to make the whole website inside the wrapper so....... */
+    height: 100vh;
+    width: 100vw;
+
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7;
+    color: var(--white);
+    background-color: #1f2029;
+
+    display: block;
+    
+    /* overflow-y: auto; as we wanted to scroll the website in y direction
+    overflow-x: hidden; as we wanted to stop the scrolling of the website in x direction */
+    overflow: hidden;
+
+    position: relative;
+}
+
+
+
+.section2 {
+    position: relative;
+    max-width: calc(100% - 40px);
+    width: 860px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.chair-1-img {
+    background-image: url("images/chair1.png");
+}
+.chair-2-img {
+    background-image: url("images/chair2.png");
+}
+.chair-3-img {
+    background-image: url("images/chair3.png");
+}
+.chair-4-img {
+    background-image: url("images/chair4.png");
+}
+.chair-5-img {
+    background-image: url("images/chair5.png");
+}
+.chair-6-img {
+    background-image: url("images/chair6.png");
+}
+
+.product-info {
+    position: relative;
+    display: block;
+}
+
+/* This is an attribute selector. This will selct all the tag which has type="radio" in it */
+[type="radio"]:checked,
+[type="radio"]:not(:checked) {
+    position: absolute;
+    visibility: hidden;     /*This will hide the radio button circle */
+}
+
+/* Adjacent Sibling Selector */
+/* The + selector is used to selct an element that is directly after another specfic element. */
