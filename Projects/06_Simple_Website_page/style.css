@@ -9,6 +9,7 @@
 :root {
     --main-blue: #6674CC;
     --white: white;
+    --grey: #999999;
 }
 
 .wrapper {
@@ -16,20 +17,63 @@
 }
 
 footer {
-    background-color: var(--main-blue);
-    color: var(--white);
     display: flex;
     justify-content: space-around;
     padding: 2em 3em 0 2em;
+    margin: 50px;
+}
+
+footer .logo img {
+    width: 150px;
 }
 
 footer h3 {
+    color: var(--main-blue);
     font-style: normal;
     font-weight: 900;
     font-size: 16px;
     line-height: 32px;
     letter-spacing: 3px;
     text-decoration-line: underline;
-    margin: 3rem 0 1rem 0;
+    margin-bottom: 1rem;
     text-transform: uppercase;
+}
+
+footer policy {
+    margin: 3rem 0 1rem 0;  
+}
+
+footer p {
+    color: var(--grey);
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 32px;
+    margin-bottom: 2.5rem;
+}
+
+footer ul li a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 32px;
+}
+
+footer .footer4 span {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: var(--main-blue);
+    border-radius: 50%;
+    color: var(--white);
+    font-weight: 900;
+    position: relative;
+    font-size: 16px;
+    display: inline-block;
+}
+
+footer .footer4 span i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
