@@ -44,24 +44,7 @@
     flex-wrap: wrap;
 }
 
-.chair-1-img {
-    background-image: url("images/chair1.png");
-}
-.chair-2-img {
-    background-image: url("images/chair2.png");
-}
-.chair-3-img {
-    background-image: url("images/chair3.png");
-}
-.chair-4-img {
-    background-image: url("images/chair4.png");
-}
-.chair-5-img {
-    background-image: url("images/chair5.png");
-}
-.chair-6-img {
-    background-image: url("images/chair6.png");
-}
+
 
 .product-info {
     position: relative;
