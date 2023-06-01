@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.outer-box {
+    height: 100vh;
+    width: 100vw;
+    background-color: #080710;;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner-box {
+    width: 400px;
+    padding: 20px 40px;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.07);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 40px rgbs(8, 7, 16, 0.6);
+    color: #ffffff;
+    border-radius: 10px;
+    z-index: 2;
+}
+
+form * {
+    letter-spacing: 0.5px;
+}
+
+.signup-header h1 {
+    font-size: 2.5rem;
+    color: #ffffff;
+}
+
+.signup-header p {
+    font-size: 1rem;
+    color: #ffffff;
+}
+
+.signup-body {
+    margin: 30px 0;
+}
+
+.signup-body p {
+    margin: 10px 0;
+}
+
+.signup-body p label {
+    display: block;
+    font-weight: 600;
+}
+
+.signup-body p input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.07);
+    border-radius: 5px;
+    font-size: 14px;
+    margin-top: 4px;
+}
+
+::placeholder {
+    color: #e5e5e5;
+}
+
+input[type="text"], 
+input[type="email"], 
+input[type="password"] {
+    color: white;
+}
+
+.signup-body p input[type = "submit"] {
+    background-color: #3498db;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+.signup-body p input[type = "submit"]:hover {
+    background-color: #2f89c5;
+
+}
+
+.signup-footer p {
+    color: #ffffff;
+    text-align: center;
+}
+
+.signup-footer p a {
+    color: #3498db;
+}
+
+.shape {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.s1 {
+    background: linear-gradient(to right, #f00, #f0f);
+    left: -56px;
+    top: 149px;
+}
+
+.s2 {
+    background: linear-gradient(to right, #ff512f, #f09819);
+    left: 190px;
+    top: 684px;
+}
+
+.s3 {
+    background: linear-gradient(to right, #1DE9B6 , #FFFF00 );
+    left: 489px;
+    top: -77px;
+}
+
+.s4 {
+    background: linear-gradient(to right, #007bff, #00bfff);
+    left: 636px;
+    top: 264px;
+}
+
+.s5 {
+    background: linear-gradient(to right, #FF80AB , #FFAB40 );
+    left: 768px;
+    top: 773px;
+}
+
+.s6 {
+    background: linear-gradient(to right, #80D8FF , #FFD600 );
+    left: 1349px;
+    top: -34px;
+}
+
+.s7 {
+    background: linear-gradient(to right, #6A1B9A , #FF1744 );
+    left: 1533px;
+    top: 856px;
+}
+
+.s8 {
+    background: linear-gradient(to right, #3C91E6 , #9013FE);
+    left: 1600px;
+    top: 400px;
+}
+
+.s9 {
+    background: linear-gradient(to right, #9C27B0 , #3F51B5 );
+    left: 1103px;
+    top: 394px;
+}
+
+.s10 {
+    background: linear-gradient(to right, #FFEB3B  , #FF9800 );
+    left: 1822px;
+    top: 154px;
+}
