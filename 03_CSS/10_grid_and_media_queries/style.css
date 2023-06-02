@@ -1,0 +1,322 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: black;
+    height: 500px;
+    border: 2px solid red;
+
+    display: grid;      /* To make the container grid */
+
+    /* grid-template-columns: 200px 200px 200px; */
+    grid-template-columns: repeat(3, 1fr);             /* Now three rows ar created of equal space (used to make it reponsive) */
+    grid-template-rows: repeat(5, 1fr);
+
+    /* now when we inspect the output you see different rows and columns on the webpage */
+    /* but if you wanted to make a gap between the rows and columns */
+    gap: 10px;
+}
+
+.box {
+    border: 2px solid orangered;
+    color: white;
+}
+
+/* as we see that the size of all the boxes are equal */
+/* this is because me mention grid-template-columns and frid-template-rows inside container */
+#box1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+#box3 {
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+/* if i extende both rows and columns then it will be called as grid area.  */
+#box6 {
+    /* grid-column-start: 2;
+    grid-column-end: 4;
+
+    grid-row-start: 3;
+    grid-row-end: 5; */
+
+    grid-area: 3/2/5/4;    /* row start/column start/row end/column end */
+}
+
+
+/* -------------------------------------------------------------------- */
+
+
+.web_layout {
+    background-color: black;
+    height: 500px;
+    border: 2px solid green;
+
+    display: grid;
+    
+    grid-template-columns: 150px 1fr 100px; 
+    grid-template-rows: 30px 1fr 30px;
+
+    gap: 5px;
+}
+
+.gfg_layout {
+    border: 2px solid greenyellow;
+    color: white;
+}
+
+#header, #footer {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+#content {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+
+/* -------------------------------------------------------------------- */
+
+
+.grid_template_area {
+    background-color: black;
+    height: 500px;
+    border: 2px solid green;
+
+    display: grid;
+
+    gap: 5px;
+    
+    grid-template-columns: 150px 1fr 100px; 
+    grid-template-rows: 30px 1fr 30px;
+
+    grid-template-areas: 
+    "hd hd hd"
+    "topic main ads"
+    "ft ft ft";
+}
+
+.layout {
+    border: 2px solid greenyellow;
+    color: white;
+}
+
+#header2 {
+    grid-area: hd;
+} 
+
+#topics2 {
+    grid-area: topic;
+}
+
+#content2 {
+    grid-area: main;
+}
+
+#ads2 {
+    grid-area: ads;
+}
+
+#footer2 {
+    grid-area: ft;
+}
+
+
+/* -------------------------------------------------------------------- */
+
+
+/* when we don't know how many rows we have to generate then we use grid_auto_rows */
+/* grid_auto_rows: minmax() */
+
+/* For example: in facebook we don't know many many rows we have to generate on scrolling */
+.auto_function {
+    height: 800px;
+    border: 2px solid yellowgreen;
+    background-color: black;
+
+    display: grid;
+    grid-gap: 5px;
+
+    /* grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr); */
+    /* in this extra boxes will squeeze */
+
+    /* uncomment above one and comment the below part */
+
+    grid-auto-rows: minmax(100px, auto);    /* it will automatically set the height and width so that none of the boxs can squeeze */
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.box2 {
+    border: 2px solid yellow;
+    color: white;
+}
+
+
+/* -------------------------------------------------------------------- */
+
+
+/* Grid Properties */
+.properties {
+    background-color: black;
+    border: 2px solid blue;
+    height: 500px;
+    width: 700px;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(2, 100px);
+
+    grid-gap: 10px;
+
+    /* Horizontal Axis */
+    justify-content: start;
+    /* justify-content: end;
+    justify-content: center;
+    justify-content: space-between;
+    justify-content: space-around;
+    justify-content: space-evenly; */
+
+    /* Vertical Axis */
+    align-content: start;
+    /* align-content: end;
+    align-content: center;
+    align-content: space-around;
+    align-content: space-between;
+    align-content: space-evenly; */
+
+    /* align-items: start;
+    align-items: end;
+    align-items: baseline;      positioning of baseline depend upon the different size of the content */
+    align-items: stretch;       /* default property */
+}
+
+.box3 {
+    border: 2px solid aqua;
+    color: white;
+}
+
+#box31 {
+    /* justify-self: start;
+    justify-self: end; */
+    justify-self: center;
+
+    /* align-self: start;
+    align-self: end; */
+    align-self: center;
+}
+
+
+/* -------------------------------------------------------------------- */
+
+
+/* MEDIA QUERIES */
+/* It is used to show the website layout in different sizes and styles in different devices */
+.media_queries {
+    height: 500px;
+    border: 2px solid grey;
+    background-color: black;
+
+    display: grid;
+    grid-gap: 5px;
+
+    grid-template-rows: 30px 1fr 30px;
+    grid-template-columns: 1fr 4fr;
+
+    grid-template-areas: 
+    "hd hd"
+    "side main"
+    "ft ft";
+}
+
+.box4 {
+    border: 2px solid white;
+    color: whitesmoke;
+}
+
+#box41 {
+    grid-area: hd;
+}
+
+#box42 {
+    grid-area: side;
+}
+
+#box43 {
+    grid-area: main;
+}
+
+#box44 {
+    grid-area: ft;
+}
+
+@media(max-width: 500px) {
+    .media_queries {
+        grid-gap: 5px;
+
+        grid-template-rows: 30px 1fr 1fr 30px;
+        grid-template-columns: 1fr;
+
+        grid-template-areas: 
+        "hd"
+        "side"
+        "main"
+        "ft";
+    }
+}
+
+/* we can also switch it between multiple layout according to the multiple screen size
+Example: 
+        Anything smaller than just breakpoint 600px
+        .container {
+            // rules for small screens
+        }
+
+        Medium Screens
+        @media(min-width: 600px) and (max-width: 900px) {
+            .container {
+                // rules for medium sizes
+            }
+        }
+
+        large Screens
+        @media (min-width: 901px) {
+            .container {
+                // rules for large screens
+            }
+        )
+*/
+
+
+/* -------------------------------------------------------------------- */
+
+
+/* Nested Grid */
+.child_grid {
+    height: 100%;
+    width: 100%;
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+
+    grid-gap: 5px;
+}
+
+.element {
+    border: 2px solid aquamarine;
+}
+
+.img1, .img4 {
+    border: 2px solid yellow;
+    height: 50%;
+    width: 100%;
+}
