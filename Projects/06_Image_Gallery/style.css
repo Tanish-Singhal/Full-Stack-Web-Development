@@ -21,7 +21,7 @@ html {
 
 .container {
     height: 100%;
-    max-width: 1200px;  /* the block can extend upto 1200px */
+    max-width: 1600px;    /* the block can extend upto 1200px */
     margin: 0px auto;     /* this will put the margin in left and right side as the content will automatically comes to center */
     padding: 20px;
 }
@@ -31,7 +31,7 @@ html {
     text-align: center;
     margin-bottom: 40px;
     font-family: poppins, 'san-serif';
-    font-size: 3rem;
+    font-size: 4rem;
 }
 
 /* .gallery {
@@ -43,15 +43,14 @@ html {
 .gallery {
     display: grid;
     grid-template-rows: repeat(5, 1fr);
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 40px;
-    grid-auto-columns: 30%;         /* Rest 4% space is for spacing */
 }
 
 .card {
     position: relative; /* Because we want to overlap the "Image 1" text on the picture */
-    margin-bottom: 20px;
-    border-radius: 10px;
+    margin-bottom: 30px;
+    border-radius: 15px;
     overflow: hidden;
 }
 
@@ -93,4 +92,28 @@ html {
 .card:hover figcaption {
     opacity: 1;
     transform: scale(1.03);
+}
+
+@media screen and (max-width: 1024px) {
+    .container {
+        max-width: 1000px;
+    }
+
+    .gallery {
+        grid-template-rows: repeat(5, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        max-width: 700px;
+    }
+
+    .gallery {
+        grid-template-rows: repeat(8, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
 }
