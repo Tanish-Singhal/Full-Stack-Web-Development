@@ -29,19 +29,26 @@ html {
 .container h1 {
     margin: 20px 0;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     font-family: poppins, 'san-serif';
     font-size: 3rem;
 }
 
-.gallery {
+/* .gallery {
     display: flex;
-    flex-wrap: wrap;    /* if not there there then all the the images come side by side */
+    flex-wrap: wrap;    /* if not there there then all the the images come side by side 
     justify-content: space-between;
+} */
+
+.gallery {
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    grid-auto-columns: 30%;         /* Rest 4% space is for spacing */
 }
 
 .card {
-    width: 32%;         /* Rest 4% space is for spacing */
     position: relative; /* Because we want to overlap the "Image 1" text on the picture */
     margin-bottom: 20px;
     border-radius: 10px;
