@@ -1,4 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+/* CSS Boilerplate */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;700&display=swap');
 
 * {
     margin: 0;
@@ -7,73 +9,202 @@
 }
 
 :root {
-    --main-blue: #6674CC;
-    --white: white;
-    --grey: #999999;
+    --banner-pink: #E74694;
+    --heading-color: #183b56;
+    --para-color: #577592;
+    --light-blue: #2294ED;
+    --button-hover: #0061AD;
 }
 
-.wrapper {
-    font-family: poppins, 'san-serif';
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--heading-color);
 }
 
-footer {
-    display: flex;
-    justify-content: space-around;
-    padding: 2em 3em 0 2em;
-    margin: 50px;
+h1 {
+    font-size: 3rem;
 }
 
-footer .logo img {
-    width: 150px;
+h2 {
+    font-size: 2rem;
 }
 
-footer h3 {
-    color: var(--main-blue);
-    font-style: normal;
-    font-weight: 900;
-    font-size: 16px;
-    line-height: 32px;
-    letter-spacing: 3px;
-    text-decoration-line: underline;
-    margin-bottom: 1rem;
-    text-transform: uppercase;
+h3 {
+    font-size: 1.5rem;
 }
 
-footer policy {
-    margin: 3rem 0 1rem 0;  
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.25rem;
+    color: var(--para-color);
+    line-height: 1.8rem;
+    font-weight: 400;
+    word-spacing: 1px;
 }
 
-footer p {
-    color: var(--grey);
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 32px;
-    margin-bottom: 2.5rem;
-}
-
-footer ul li a {
+a {
     text-decoration: none;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 32px;
-}
-
-footer .footer4 span {
-    width: 48px;
-    height: 48px;
-    border-radius: 50%;
-    background-color: var(--main-blue);
-    border-radius: 50%;
-    color: var(--white);
-    font-weight: 900;
-    position: relative;
-    font-size: 16px;
     display: inline-block;
 }
 
-footer .footer4 span i {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Utility Classes */
+/* Banner Section */
+.top-banner {
+    background-color: var(--banner-pink);
+    background-image: url(images/asset\ 32.png);
+    background-size: 300px;
+    background-repeat: repeat;
+    padding: 10px 20px 10px 20px;
+}
+
+.top-banner-text{
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Navbar Section */
+.main-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+}
+
+.logo {
+    max-width: 230px;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hover-link {
+    margin: 15px;
+    color: var(--heading-color);
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.hover-link:hover {
+    color: var(--light-blue);
+    transition: 0.2s ease-out;
+}
+
+.sign-in {
+    border: 1px solid var(--para-color);
+    border-radius: 6px;
+    padding: 12px 24px;
+    transition: 0.2s ease-out;
+}
+
+.sign-in:hover {
+    border: 1px solid var(--light-blue);
+}
+
+.sign-up {
+    background-color: var(--light-blue);
+    color: white !important;            /* By this color of the dign-up button is always white, it does not change its colour on hover as that property is applicable to all the other links */
+    border-radius: 6px;
+    padding: 12px 24px;
+    transition: 0.2s ease-out;
+}
+
+.sign-up:hover {
+    background-color: var(--button-hover);
+}
+
+/* header Section */
+.introduction {
+    margin: 60px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.into-text {
+    width: 30vw;
+}
+
+.into-text p {
+    margin-top: 10px;
+    font-family: 'Poppins';
+}
+
+.get-started-btn {
+    background-color: var(--light-blue);
+    color: white !important;
+    font-weight: 600;
+    margin-top: 30px;
+    border-radius: 6px;
+    padding: 12px 24px;
+    transition: 0.2s ease-out;
+}
+
+.get-started-btn:hover {
+    background-color: var(--button-hover);
+}
+
+.intro-img {
+    width: 40vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro-img img {
+    width: 600px;
+}
+
+/* Companies Section */
+.companies {
+    margin: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.companies-text p{
+    color: black;
+    margin: 20px;
+}
+
+.companies-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin: 10px;
+}
+
+.cmp-logo {
+    width: 200px;
+}
+
+.amazon {
+    width: 120px;
+}
+
+.google {
+    width: 120px;
+}
+
+.box {
+    width: 80px;
 }
