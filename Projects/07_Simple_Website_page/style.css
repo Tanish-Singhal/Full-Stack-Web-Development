@@ -208,3 +208,47 @@ ul {
 .box {
     width: 80px;
 }
+
+/* Features Section */
+.features-section {
+    margin: 60px;
+}
+
+.features-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main-features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 40px;
+    margin: 30px;
+    width: 1600px;
+    margin-right: 100px;
+}
+
+.features-logo {
+    width: 60px;
+}
+
+.features-btn {
+    border: 1px solid var(--para-color);
+    border-radius: 6px;
+    padding: 12px 24px;
+    margin: 10px;
+    font-weight: 600;
+    transition: 0.2s ease-out;
+    
+}
+
+.features-btn:hover {                       /* Both for feature-header button and main-feature button */
+    border: 1px solid var(--light-blue);
+    color: var(--light-blue);
+}
+
+
+
