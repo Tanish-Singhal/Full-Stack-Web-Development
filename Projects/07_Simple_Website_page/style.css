@@ -210,24 +210,45 @@ ul {
 }
 
 /* Features Section */
+
 .features-section {
+
     margin: 60px;
+
     background-image: url(images/asset\ 34.png);
     background-repeat: no-repeat;
     background-position: center;
+
+
+    background-image: url(images/asset\ 34.png);
+
+    background-repeat: no-repeat;
+
+    background-position: center;
+
+
 }
 
 .features-header {
+
     display: flex;
+
     justify-content: center;
+
     align-items: center;
+
     flex-direction: column;
+
 }
 
 .main-features {
+
     display: grid;
+
     grid-template-columns: repeat(3, 1fr);
+
     grid-template-rows: repeat(2, 1fr);
+
     gap: 60px;
     margin: 30px;
     margin-left: 275px;
@@ -248,22 +269,68 @@ ul {
 
 .features p {
     text-align: center;
+
+
+    gap: 60px;
+
+    margin: 30px;
+
+    margin-left: 275px;
+
+    width: 1400px;
+
+}
+
+.features {
+
+    width: 270px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    flex-direction: column;
+
+}
+
+.features-logo {
+
+    width: 50px;
+
+}
+
+.features p {
+
+    text-align: center;
+
+
 }
 
 .features-btn {
+
     border: 1px solid var(--para-color);
+
     border-radius: 6px;
+
     padding: 12px 24px;
+
     margin: 10px;
+
     font-weight: 600;
+
     transition: 0.2s ease-out;
+
     
+
 }
 
 .features-btn:hover {                       /* Both for feature-header button and main-feature button */
+
     border: 1px solid var(--light-blue);
+
     color: var(--light-blue);
+
 }
-
-
 
