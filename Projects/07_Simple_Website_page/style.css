@@ -47,16 +47,11 @@ a {
     display: inline-block;
 }
 
-.flex {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 ul {
     list-style: none;
 }
 
+/* TODO: */
 /* Utility Classes */
 /* Banner Section */
 .top-banner {
@@ -106,29 +101,36 @@ ul {
     transition: 0.2s ease-out;
 }
 
-.sign-in {
+/* FIXME: */
+.transparent-btn {
     border: 1px solid var(--para-color);
     border-radius: 6px;
     padding: 12px 24px;
+    margin: 10px;
+    font-weight: 600;
     transition: 0.2s ease-out;
 }
 
-.sign-in:hover {
+.transparent-btn:hover {                       /* Both for feature-header button and main-feature button */
     border: 1px solid var(--light-blue);
+    color: var(--light-blue);
 }
 
-.sign-up {
+/* FIXME: */
+.blue-btn {
     background-color: var(--light-blue);
     color: white !important;            /* By this color of the dign-up button is always white, it does not change its colour on hover as that property is applicable to all the other links */
     border-radius: 6px;
+    font-weight: 600;
     padding: 12px 24px;
     transition: 0.2s ease-out;
 }
 
-.sign-up:hover {
+.blue-btn:hover {
     background-color: var(--button-hover);
 }
 
+/* TODO: */
 /* header Section */
 .introduction {
     margin: 60px;
@@ -146,20 +148,6 @@ ul {
     font-family: 'Poppins';
 }
 
-.get-started-btn {
-    background-color: var(--light-blue);
-    color: white !important;
-    font-weight: 600;
-    margin-top: 30px;
-    border-radius: 6px;
-    padding: 12px 24px;
-    transition: 0.2s ease-out;
-}
-
-.get-started-btn:hover {
-    background-color: var(--button-hover);
-}
-
 .intro-img {
     width: 40vw;
     display: flex;
@@ -171,6 +159,7 @@ ul {
     width: 600px;
 }
 
+/* TODO: */
 /* Companies Section */
 .companies {
     margin: 60px;
@@ -209,9 +198,10 @@ ul {
     width: 80px;
 }
 
+/* TODO: */
 /* Features Section */
 .features-section {
-    margin: 60px;
+    margin: 60px 60px 60px 0;
     background-image: url(images/asset\ 34.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -250,17 +240,66 @@ ul {
     text-align: center;
 }
 
-.features-btn {
-    border: 1px solid var(--para-color);
-    border-radius: 6px;
-    padding: 12px 24px;
-    margin: 10px;
-    font-weight: 600;
-    transition: 0.2s ease-out;
-    
+/* TODO: */
+/* examples section */
+.examples {
+    padding: 2vh 14vw;
+    display: flex;
+    flex-direction: column;
 }
 
-.features-btn:hover {                       /* Both for feature-header button and main-feature button */
-    border: 1px solid var(--light-blue);
-    color: var(--light-blue);
+.example1 {
+    display: flex;
+    margin-bottom: 10vh;
+}
+
+.example-img {
+    width: 70%;
+}
+
+.example-img img {
+    width: 65%;
+}
+
+.example-text {
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+.example-text img {
+    width: 35%;
+    margin: 20px 0 20px 0;
+}
+
+.random-text {
+    background-image: url(images/asset\ 35.png);
+    background-repeat: no-repeat;
+}
+
+.person {
+    display: flex;
+    height: 55px;
+    margin-top: 20px;
+}
+
+.person-img img {
+    width: 55%;
+    margin: 0;
+}
+
+.example2 {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-bottom: 10vh;
+}
+
+.left img {
+    float: right;
+}
+
+.example3 {
+    display: flex;
+    margin-bottom: 10vh;
 }
