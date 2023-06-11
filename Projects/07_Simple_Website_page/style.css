@@ -303,3 +303,54 @@ ul {
     display: flex;
     margin-bottom: 10vh;
 }
+
+/* TODO: */
+/* more-examples */
+.more-examples {
+    padding: 2vh 14vw;
+}
+
+.examples-card {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card {
+    min-height: 370px;
+    margin-top: 30px;
+    width: 20%;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    position: relative;
+    transition: 0.2s ease-out;
+}
+
+.card:hover {
+    box-shadow: 0 0 10px #888;
+}
+
+.card h3 {
+    position: absolute;
+    bottom: 20px;
+}
+
+.card1-img {
+    background-image: linear-gradient(rgb(0,0,0,0.1), rgb(0,0,0,0.8)) ,url(images/asset\ 36.jpeg);
+    object-fit: cover;
+}
+
+.card2-img {
+    background-image: linear-gradient(rgb(0,0,0,0.1), rgb(0,0,0,0.8)) ,url(images/asset\ 37.jpeg);
+    object-fit: cover;
+}
+
+.card3-img {
+    background-image: linear-gradient(rgb(0,0,0,0.1), rgb(0,0,0,0.8)) ,url(images/asset\ 38.jpeg);
+    object-fit: cover;
+}
+
+.card4-img {
+    background-image: linear-gradient(rgb(0,0,0,0.1), rgb(0,0,0,0.8)) ,url(images/asset\ 39.jpeg);
+    object-fit: cover;
+}
