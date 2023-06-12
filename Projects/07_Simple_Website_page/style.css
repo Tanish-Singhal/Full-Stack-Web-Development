@@ -308,6 +308,7 @@ ul {
 /* more-examples */
 .more-examples {
     padding: 2vh 14vw;
+    margin-bottom: 2%;
 }
 
 .examples-card {
@@ -353,4 +354,46 @@ ul {
 .card4-img {
     background-image: linear-gradient(rgb(0,0,0,0.1), rgb(0,0,0,0.8)) ,url(images/asset\ 39.jpeg);
     object-fit: cover;
+}
+
+/* TODO: */
+/* Learn More Section */
+.learn-more {
+    background-color: #183B54;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 2vh 14vw;
+}
+
+.learn-more-text {
+    width: 50%;
+    margin-top: 10px;
+}
+
+.learn-more-text p {
+    color: #b9cde4;
+}
+
+.learn-more-text ul {
+    color: #b9cde4;
+}
+
+.learn-more-img {
+    margin-top: 10px;
+}
+
+.learn-more-img img {
+    width: 80%;
+    float: right;
+}
+
+.list {
+    color: #b9cde4;
+    display: flex;
+    gap: 50px;
+}
+
+.list-ex {
+    margin: 8px;
 }
