@@ -397,3 +397,65 @@ ul {
 .list-ex {
     margin: 8px;
 }
+
+/* TODO: */
+/* Get Started Section */
+.get-started {
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.get-started h2 {
+    margin: 20px;
+}
+
+.get-started p {
+    margin: 20px;
+}
+
+.get-started a {
+    margin: 20px;
+}
+
+/* TODO: */
+/* All Links Section */
+.all-links {
+    background: #EBF2FA;
+    padding: 8vh 14vw;
+    display: flex;
+    justify-content: space-around;
+}
+
+.all-links a {
+    display: flex;
+    color: #577592;
+}
+
+/* TODO: */
+/* Sub Footer Section */
+.sub-footer {
+    background-color: #B9CDE4;
+    color: #577592;
+    padding: 1.5vh 20vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.imp-links {
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    font-weight: bold;
+}
+
+.social-media-links {
+    float: left;
+    width: 20%;
+    display: flex;
+    justify-content: space-evenly;
+    font-weight: bold;
+}
