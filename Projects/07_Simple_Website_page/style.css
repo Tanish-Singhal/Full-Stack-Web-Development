@@ -448,7 +448,7 @@ ul {
 .imp-links {
     width: 60%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     font-weight: bold;
 }
 
@@ -458,4 +458,9 @@ ul {
     display: flex;
     justify-content: space-evenly;
     font-weight: bold;
+    gap: 20px;
+}
+
+.social-media-links img {
+    width: 25px;
 }
