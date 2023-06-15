@@ -1,0 +1,24 @@
+/* In this project we use desktop first approach which is wrong. We also have to make the website with mobile first approach. */
+
+/* TODO: */
+/* Media Queries */
+@media screen and (max-width: 991px) {
+    .nav-toggle {
+        display: block;
+        margin-right: 25px;
+    }
+
+    .quick-links {
+        display: none;
+    }
+
+    .example-card {
+        gap: 20px;
+    }
+
+    .card {
+        width: calc(50% - 20px);
+        height: 150px;
+        font-size: 20px;
+    }
+}

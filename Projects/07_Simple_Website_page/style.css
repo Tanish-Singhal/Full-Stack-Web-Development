@@ -53,6 +53,11 @@ ul {
 
 /* TODO: */
 /* Utility Classes */
+
+.wrapper {
+    overflow: hidden;
+}
+
 /* Banner Section */
 .top-banner {
     background-color: var(--banner-pink);
@@ -73,10 +78,11 @@ ul {
 
 /* Navbar Section */
 .main-nav {
+    padding: 0 24px;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 80px;
+    height: 5rem;
 }
 
 .logo {
@@ -89,16 +95,22 @@ ul {
     align-items: center;
 }
 
-.hover-link {
-    margin: 15px;
-    color: var(--heading-color);
-    font-size: 1.2rem;
-    font-weight: 600;
+.nav-toggle {
+    display: none;      /* This will not display hamburger icon when on laptop version */
 }
 
-.hover-link:hover {
-    color: var(--light-blue);
-    transition: 0.2s ease-out;
+.hamburger-icon {
+    display: inline-block;
+    cursor: pointer;
+    padding: 10px;
+}
+  
+.hamburger-icon span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin-bottom: 5px;
+    background-color: #000;
 }
 
 /* FIXME: */
@@ -108,6 +120,18 @@ ul {
     padding: 12px 24px;
     margin: 10px;
     font-weight: 600;
+    transition: 0.2s ease-out;
+}
+
+.hover-link {
+    margin: 15px;
+    color: var(--heading-color);
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.hover-link:hover {
+    color: var(--light-blue);
     transition: 0.2s ease-out;
 }
 
@@ -312,12 +336,13 @@ ul {
 }
 
 .examples-card {
+    flex-wrap: wrap;
     display: flex;
     justify-content: space-evenly;
 }
 
 .card {
-    min-height: 370px;
+    height: 370px;
     margin-top: 30px;
     width: 20%;
     background-color: black;
