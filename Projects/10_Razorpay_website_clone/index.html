@@ -17,76 +17,129 @@
     <!-- TODO: -->
     <!-- Navbar -->
     <nav class="bg-deepBlue">
-        <div class="relative w-[1080px] mx-auto flex items-center justify-between">
+        
+        <div class="relative w-[1200px] mx-auto flex items-center justify-between gap-6">
             <!-- FIXME: -->
             <!-- Logo -->
             <a href="#" class="cursor-pointer py-7 pr-7">
                 <img src="./Images/logo.svg" alt="logo image"
                  width="125px" 
-                 height="30px">
+                 height="30px"
+                 loading="lazy">
             </a>
 
             <!-- FIXME: -->
-            <!-- Nav Links -->
+            <!--==== Nav Links ====-->
             <ul class="flex gap-6">
+                <!-- Navbar Link -->
                 <li class="text-white font-mullish py-7 cursor-pointer hover:text-lightBlue transition-all duration-200 relative group">
-                    <a href="#">Payments</a>
+                    <a href="#" class="font-bold">Payments</a>
 
                     <div class="absolute bottom-0 w-full h-1 bg-lightBlue hidden group-hover:block transition-all duration-200"></div>
                 </li>
 
+                <!-- Navbar Link -->
                 <li class="text-white font-mullish py-7 cursor-pointer hover:text-lightBlue transition-all duration-200 relative group">
-                    <a href="#">Banking+</a>
+                    <a href="#" class="font-bold">Banking+</a>
 
                     <div class="absolute bottom-0 w-full h-1 bg-lightBlue hidden group-hover:block transition-all duration-200"></div>
                 </li>
 
+                <!-- Navbar Link -->
                 <li class="text-white font-mullish py-7 cursor-pointer hover:text-lightBlue transition-all duration-200 relative group">
-                    <a href="#">Line of Credit</a>
+                    <a href="#" class="font-bold">Line of Credit</a>
                 </li>
 
+                <!-- Navbar Link -->
                 <li class="text-white font-mullish py-7 cursor-pointer hover:text-lightBlue transition-all duration-200 relative group">
-                    <a href="#">Payroll</a>
+                    <a href="#" class="font-bold">Payroll</a>
                 </li>
 
+                <!-- Navbar Link -->
                 <li class="text-white font-mullish py-7 cursor-pointer hover:text-lightBlue transition-all duration-200 relative group">
-                    <a href="#">Resources</a>
+                    <a href="#" class="font-bold">Resources</a>
 
                     <div class="absolute bottom-0 w-full h-1 bg-lightBlue hidden group-hover:block transition-all duration-200"></div>
                 </li>
 
+                <!-- Navbar Link -->
                 <li class="text-white font-mullish py-7 cursor-pointer hover:text-lightBlue transition-all duration-200 relative group">
-                    <a href="#">Support</a>
+                    <a href="#" class="font-bold">Support</a>
 
                     <div class="absolute bottom-0 w-full h-1 bg-lightBlue hidden group-hover:block transition-all duration-200"></div>
                 </li>
 
+                <!-- Navbar Link -->
                 <li class="text-white font-mullish py-7 cursor-pointer hover:text-lightBlue transition-all duration-200 relative group">
-                    <a href="#">Pricing</a>
+                    <a href="#" class="font-bold">Pricing</a>
 
                     <div class="absolute bottom-0 w-full h-1 bg-lightBlue hidden group-hover:block transition-all duration-200"></div>
                 </li>
             </ul>
 
             <!-- FIXME: -->
-            <!-- Indian Flag and Button -->
-            <div class="flex gap-6 items-center">
+            <!--==== Indian Flag and Button ====-->
+            <div class="flex gap-4 items-center">
                 <!-- Indian Flag -->
                 <img src="./Images/india-flag.svg" alt="Indian Flag"
                  width="28px" 
-                 height="20px">
+                 height="20px"
+                 loading="lazy">
 
-                <!-- Button -->
+                <!--==== Buttons ====-->
+                <!-- Log In Button -->
                 <button class="py-3 px-5 font-mullish text-white border-lightBlue border rounded-md font-bold">Log In</button>
 
+                <!-- Sign Up Button -->
                 <button class="py-3 px-5 font-mullish text-lightBlue bg-white border rounded-md font-bold hover:text-lightBlue500 transition-all duration-200 flex items-center gap-2">
                     Sign Up
                     <img src="./Images/asset 10.png" alt="arrow image"
-                     class="w-[12px] h-[12px]">
+                     class="w-[12px] h-[12px]"
+                     loading="lazy">
                 </button>
             </div>
         </div>
     </nav>
+
+    <!-- TODO: -->
+    <!--==== Introduction ====-->
+    <section class="relative bg-deepBlue">
+        
+        <!-- This div is a box which contains both image and text -->
+        <div class="w-10/12 max-w-[1080px] flex justify-between items-center mx-auto">
+            <!-- FIXME: -->
+            <!--==== Text Section (Left Part) ====-->
+            <div class="space-y-8">
+                <h1 class="font-mullish font-bold text-[40px] leading-[1.2] text-white">Power your finance, grow your business</h1>
+                
+                <div class="w-6 h-1 bg-greenLight"></div>
+                
+                <p class="font-mullish text-[18px] leading-7 text-white opacity-70">Accept payments from customers. Automate payouts to vendors & employees. Never run out of working capital.</p>
+
+                <!--==== Sign Up Button ====-->
+                <div>
+                    <button class="bg-lightBlue text-white rounded-md font-mullish font-bold hover:bg-lightBlue500 transition-all duration-200 py-[14px] px-[18px]">
+                        Sign Up Now
+                    </button>
+                </div>
+                
+            </div>
+
+            <!-- FIXME: -->
+            <!--==== Image Section (Right Part) ====-->
+            <div>
+                <img src="./Images/hero-illustration.jpg" alt="Introduction Image"
+                loading="lazy">
+            </div>
+        </div>
+
+        <!-- FIXME: -->
+        <!--==== Triangular Shape part ====-->
+        <div class="absolute left-0 right-0">
+            <img src="./Images/hero-shape.svg" alt="Hero Shape"
+            loading="lazy">
+        </div>
+    </section>
 
 </body> 
 
