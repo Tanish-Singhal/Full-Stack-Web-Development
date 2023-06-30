@@ -46,7 +46,7 @@
 <body>
 
     <div class="overflow-x-hidden relative w-full">
-        
+
         <!-- TODO: Navbar -->
         <nav class="bg-deepBlue">
             <div class="relative w-[1200px] mx-auto flex items-center justify-between gap-6">
@@ -131,8 +131,8 @@
         <!-- TODO: Introduction Section -->
         <section class="relative bg-deepBlue">
 
-            <!-- Container for image and text -->
-            <div class="w-10/12 max-w-[1080px] flex justify-between items-center mx-auto">
+            <!-- FIXME: Container for image and text -->
+            <div class="w-10/12 max-w-[1080px] flex justify-between items-center gap-10 mx-auto">
 
                 <!-- FIXME: Text content -->
                 <div class="space-y-8">
@@ -163,14 +163,15 @@
             <!-- FIXME: Triangular Shape -->
             <div class="absolute left-0 right-0">
                 <img src="./Images/hero-shape.svg" alt="Hero Shape"
+                class="w-full object-fill"
                 loading="lazy">
             </div>
         </section>
 
         <!-- TODO: Feature Section -->
         <section class="relative mt-[190px] overflow-hidden">
-
-            <!-- FIXME: Dotted Images -->
+            <!-- Dotted image -->
+            <!-- FIXME: The path for the dotted image should be updated to the correct location -->
             <img src="./Images/feature-section1-dottedrows.png" alt=""
             loading="lazy"
             width="233" 
@@ -286,7 +287,7 @@
                         </div>
 
                         <div class="flex items-center cursor-pointer group">
-                            <a href="#" class="font-mullish font-bold text-lightBlue500 group-hover:text-gray-50 transition-all duration-200">Know More</a>
+                            <a href="#" class="font-mullish font-bold text-lightBlue500 group-hover:text-grayBlue transition-all duration-200">Know More</a>
                             <i data-feather="chevron-right" class="w-5 h-5 text-lightBlue500 group-hover:text-grayBlue transition-all duration-200"></i>
                         </div>
                     </div>
@@ -332,7 +333,7 @@
                         </div>
 
                         <div class="flex items-center cursor-pointer group">
-                            <a href="#" class="font-mullish font-bold text-lightBlue500 group-hover:text-gray-50 transition-all duration-200">Know More</a>
+                            <a href="#" class="font-mullish font-bold text-lightBlue500 group-hover:text-grayBlue transition-all duration-200">Know More</a>
                             <i data-feather="chevron-right" class="w-5 h-5 text-lightBlue500 group-hover:text-grayBlue transition-all duration-200"></i>
                         </div>
                     </div>
@@ -378,7 +379,7 @@
                         </div>
 
                         <div class="flex items-center cursor-pointer group">
-                            <a href="#" class="font-mullish font-bold text-lightBlue500 group-hover:text-gray-50 transition-all duration-200">Know More</a>
+                            <a href="#" class="font-mullish font-bold text-lightBlue500 group-hover:text-grayBlue transition-all duration-200">Know More</a>
                             <i data-feather="chevron-right" class="w-5 h-5 text-lightBlue500 group-hover:text-grayBlue transition-all duration-200"></i>
                         </div>
                     </div>
@@ -424,7 +425,7 @@
                         </div>
 
                         <div class="flex items-center cursor-pointer group">
-                            <a href="#" class="font-mullish font-bold text-lightBlue500 group-hover:text-gray-50 transition-all duration-200">Know More</a>
+                            <a href="#" class="font-mullish font-bold text-lightBlue500 group-hover:text-grayBlue transition-all duration-200">Know More</a>
                             <i data-feather="chevron-right" class="w-5 h-5 text-lightBlue500 group-hover:text-grayBlue transition-all duration-200"></i>
                         </div>
                     </div>
@@ -470,7 +471,7 @@
                         </div>
 
                         <div class="flex items-center cursor-pointer group">
-                            <a href="#" class="font-mullish font-bold text-lightBlue500 group-hover:text-gray-50 transition-all duration-200">Know More</a>
+                            <a href="#" class="font-mullish font-bold text-lightBlue500 group-hover:text-grayBlue transition-all duration-200">Know More</a>
                             <i data-feather="chevron-right" class="w-5 h-5 text-lightBlue500 group-hover:text-grayBlue transition-all duration-200"></i>
                         </div>
                     </div>
@@ -516,12 +517,24 @@
                         </div>
 
                         <div class="flex items-center cursor-pointer group">
-                            <a href="#" class="font-mullish font-bold text-lightBlue500 group-hover:text-gray-50 transition-all duration-200">Know More</a>
+                            <a href="#" class="font-mullish font-bold text-lightBlue500 group-hover:text-grayBlue transition-all duration-200">Know More</a>
                             <i data-feather="chevron-right" class="w-5 h-5 text-lightBlue500 group-hover:text-grayBlue transition-all duration-200"></i>
                         </div>
                     </div>
                 </div>
             </div>
+        
+            <!-- FIXME: Find a product -->
+            <div class="relative w-11/12 max-w-[1080px] mx-auto m-10 p-3 flex justify-center items-center gap-2 border-2 rounded-md bg-gradient-to-b from-blue-100 to-white bg-opacity-95">
+                <h5 class="font-mullish font-bold">Not sure which product to choose? </h5>
+                
+                <p class="font-mullish text-grayText">Answer a few questions and we’ll help you out</p>
+                
+                <div class="flex items-center cursor-pointer group">
+                    <a href="#" class="font-mullish font-bold text-lightBlue500 group-hover:text-grayBlue transition-all duration-200">Find me a product</a>
+                    <i data-feather="chevron-right" class="w-5 h-5 text-lightBlue500 group-hover:text-grayBlue transition-all duration-200"></i>
+                </div>
+            <div>
         </section>
         
         <!-- TODO: Razopay Business Banking -->
@@ -581,7 +594,7 @@
                                 <button class="relative bg-lightBlue flex items-center justify-start text-white py-[14px] px-[18px] md:pr-[90px] rounded-md font-mullish font-bold hover:bg-lightBlue500 transition-all duration-200">
                                     Sign Up
                                     <!-- Green Color Strip (we will rote it with the help of skew) -->
-                                    <div class="w-12 h-[60px] bg-greenLight absolute left-[130px] skew-x-[20deg] flex justify-center items-center">
+                                    <div class="w-12 h-[60px] bg-greenLight absolute left-[100px] skew-x-[20deg] flex justify-center items-center">
                                         <!-- arrow (and then anti tilt it) -->
                                         <svg
                                         viewBox="0 0 24 24"
@@ -772,6 +785,7 @@
                         </div>
                     </button>
                 </div>
+                
             </div>
         </section>
 
@@ -880,7 +894,7 @@
                     </div>
                 </div>
             </div>
-                    
+            
         </section>
 
         <!-- TODO: Core Features Section -->
@@ -1622,12 +1636,12 @@
             </div>
         </footer>
 
-    </div>
+        <!-- Some script were written (This is for the green check in list) -->
+        <script>
+            feather.replace()
+        </script>
 
-    <!-- Some script were written (This is for the green check in list) -->
-    <script>
-        feather.replace()
-    </script>
+    </div>
 
 </body> 
 
