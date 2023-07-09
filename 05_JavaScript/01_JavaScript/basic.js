@@ -222,3 +222,33 @@ switch(exp) {
         break;
 }
 console.log()
+
+// TODO: functions
+function fun(k) {
+    console.log(k + 10);
+    return k*10;
+}
+
+let k = fun(10);
+console.log(fun(10));
+// ruturn keyword retuens an output out of the function and immediately stops the function execution.
+console.log()
+console.log(console.log(10));
+console.log()
+// as console.log is a afunction, the inner console.log prints 10 and return undefined and then the outer console.log prints undefined as undefined and return undinedd
+// so that's why the output is
+// 10
+// undefined
+
+// TODO: Unary Operators
+let abc = 10;
+let efg = abc++;
+let ijk = abc++;
+console.log(abc, efg, ijk);
+console.log()
+
+let lmn = 10;
+let opq = ++lmn;
+let rst = ++lmn;
+console.log(lmn, opq, rst);
+console.log()
