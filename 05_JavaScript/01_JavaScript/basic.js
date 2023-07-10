@@ -31,8 +31,17 @@ console.log(undefined);
 console.log(null);
 console.log();
 
-// objects (key-value pairs)
-console.log({"sanket": 123});
+// objects (key-value pairs)    Here item is the reference to this object
+const item = {
+    Harry: true,
+    Shubh: false,
+    Lovish: 67,
+    Rohan: undefined,
+}
+console.log(item["Lovish"]);
+console.log(item);
+item["friend"] = "Shubham";
+console.log(item);
 console.log();
 
 // symbol
@@ -81,6 +90,7 @@ if (true) {
 console.log(c);
 console.log(h);
 console.log();
+// Seedhi baat: Var ko use mat karo 
 
 
 // TODO: Operators
@@ -252,3 +262,16 @@ let opq = ++lmn;
 let rst = ++lmn;
 console.log(lmn, opq, rst);
 console.log()
+
+
+// TODO: Browser Code
+let age = prompt("Hey, What is your age?");
+age = Number,parseInt(age);     // converting the string into a number
+if (age > 18) {
+    alert ("This is a valid age");
+}
+else {
+    alert ("This is not a valid age");
+}
+console.log("Done");
+console.log("You can", (age<18? "not valid" : "valid"));
