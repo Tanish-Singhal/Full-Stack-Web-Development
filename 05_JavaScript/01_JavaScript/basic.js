@@ -31,18 +31,7 @@ console.log(undefined);
 console.log(null);
 console.log();
 
-// objects (key-value pairs)    Here item is the reference to this object
-const item = {
-    Harry: true,
-    Shubh: false,
-    Lovish: 67,
-    Rohan: undefined,
-}
-console.log(item["Lovish"]);
-console.log(item);
-item["friend"] = "Shubham";
-console.log(item);
-console.log();
+// Object is at the bottom
 
 // symbol
 console.log(Symbol('hello'));
@@ -176,6 +165,13 @@ else {
 console.log();
 
 
+// TODO: For Loop
+for (let j = 0; j < 10; j++) {
+    console.log(j);
+}
+console.log();
+
+
 // TODO: While Loop
 let i = 0;
 while (i < 10) {
@@ -185,11 +181,14 @@ while (i < 10) {
 console.log();
 
 
-// TODO: For Loop
-for (let j = 0; j < 10; j++) {
-    console.log(j);
-}
+// TODO: Do-while Loop (It execute atlest one time always whether the consdititon is true or false)
+let m = 0;
+do {
+    console.log(m);
+    m++;
+}while (m < 10);
 console.log();
+
 
 // TODO: Break (cursor came out of the nearest loop)
 for (let p = 1; p < 10; p++) {
@@ -201,7 +200,8 @@ for (let p = 1; p < 10; p++) {
 }
 console.log();
 
-// TODO: COntinue (it will take back to the nearest loop)
+
+// TODO: Continue (it will take back to the nearest loop)
 for (let r = 0; r < 10; r++) {
     if (r%3 ===0) {
         continue;
@@ -209,6 +209,7 @@ for (let r = 0; r < 10; r++) {
     console.log(r);
 }
 console.log();
+
 
 // TODO: Swith case 
 let exp = "-";
@@ -238,17 +239,54 @@ function fun(k) {
     console.log(k + 10);
     return k*10;
 }
-
 let k = fun(10);
 console.log(fun(10));
-// ruturn keyword retuens an output out of the function and immediately stops the function execution.
+// return keyword returns an output out of the function and immediately stops the function execution.
 console.log()
-console.log(console.log(10));
-console.log()
-// as console.log is a afunction, the inner console.log prints 10 and return undefined and then the outer console.log prints undefined as undefined and return undinedd
-// so that's why the output is
-// 10
-// undefined
+
+// FIXME: another way to write the function (Arrow Function)
+const mean = (a, b, c, d) => {
+    return (a + b + c + d) / 4;
+}
+console.log(mean(4, 5, 6, 7));
+console.log();
+
+
+// TODO: Object (key-value pairs)    Here item is the reference to this object
+const item = {
+    Harry: true,
+    Shubh: false,
+    Lovish: 67,
+    Rohan: undefined,
+
+    // If we add function inside an object then it is called method.
+    draw: function() {
+        console.log('drawing rectangle');
+    }
+}
+console.log(item);
+console.log(item.Lovish);
+console.log(item.draw());    // calling the method
+item["friend"] = "Shubham";
+console.log(item);
+
+// FIXME: function to create an object (Factory Function)
+function createRectangle(l, b) {
+    let rectangle = {
+        length1 : l,
+        breadth1 : b,
+
+        drawing: function() {
+            console.log('drawing Rectangle JI');
+        }
+    }
+    return rectangle;
+}
+let rectangleobj1 = createRectangle(5, 4);
+let rectangleobj2 = createRectangle(6, 3);
+let rectangleobj3 = createRectangle(2, 7);
+console.log();
+
 
 // TODO: Unary Operators
 let abc = 10;
@@ -264,14 +302,24 @@ console.log(lmn, opq, rst);
 console.log()
 
 
-// TODO: Browser Code
-let age = prompt("Hey, What is your age?");
-age = Number,parseInt(age);     // converting the string into a number
-if (age > 18) {
-    alert ("This is a valid age");
-}
-else {
-    alert ("This is not a valid age");
-}
-console.log("Done");
-console.log("You can", (age<18? "not valid" : "valid"));
+// TODO: Browser Code (this code will only works on browser)
+// let age = prompt("Hey, What is your age?");
+// age = Number,parseInt(age);     // converting the string into a number
+// if (age > 18) {
+//     alert ("This is a valid age");
+// }
+// else {
+//     alert ("This is not a valid age");
+// }
+// console.log("Done");
+// console.log("You can", (age<18? "not valid" : "valid"));
+// console.log();
+
+
+// TODO:
+console.log(console.log(10));
+console.log();
+// as console.log is a function, the inner console.log prints 10 and return undefined and then the outer console.log prints undefined as undefined and return undinedd
+// so that's why the output is
+// 10
+// undefined
