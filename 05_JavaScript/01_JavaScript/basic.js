@@ -27,8 +27,8 @@ console.log(true);
 console.log();
 
 // undefined, null
-console.log(undefined);
-console.log(null);
+console.log(undefined);     // Something not defined yet but may be defined later
+console.log(null);          // It actually represents empty value.
 console.log();
 
 // Object is at the bottom
@@ -126,6 +126,7 @@ console.log(4 || 5);    // 4    (true and the first value was printed)
 console.log(3 && 4);    // 4    (true and the second value was printed)
 console.log(3 || 4);    // 3    (true and the second value was printed)
 console.log(-0 && 9);   // -0
+console.log(!(3 > 4));
 console.log();
 
 
