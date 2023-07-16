@@ -83,6 +83,30 @@ console.log(4 - true);
  * 4- 1 = 3
 */
 
+console.log("abcd" - 2);    // NaN
+console.log("0xabcd" - 2);  // here "0x" reresnt hexadecimal number
+console.log("0o11" - 1);    // here "0o" represent octal number
+
+/**
+ * More rules
+ * "" (empty string) => 0
+ * "(Any number)"    => number
+ * "."               => NaN
+ * "$"               => NaN
+ * "ab32"            => NaN
+ * true              => 1
+ * false             => 0
+ * null              => 0
+ * undefined         => NaN
+ * 
+ * [""]              => 0
+ * ["0"]             => 0
+ * [null]            => 0
+ * [undefined]       => 0
+ * [1,2,3]           => NaN
+ * []                => 0
+ */
+
 console.log("0xf" - 1);
 /**
  * "0xf", is a string, but in the starting we have 0x which denotes start of hexadecimal value
@@ -96,6 +120,68 @@ console.log("0xz" - 1);
  * ToNumber("0xz") -> NaN
  * NaN - 1 = NaN
  */
+console.log();
 
-console.log("abcd" - 2);    // NaN
-console.log("0xabcd" - 2);  // 43979
+// TODO: ToString
+
+/**
+ * More Rules
+ * null      => "null"
+ * undefined => "undefined"
+ * true      => "true"
+ * false     => "false"
+ * 3.145     => "3.145"
+ * 0         => "0"
+ * -0        => "-0"
+ * 
+ * []                => ""
+ * [1,2,3]           => "1,2,3"
+ * [null, undefined] => ","
+ * [[], [], []]      => ",,"
+ * [,,,]             => ",,,"
+ */
+
+console.log("Tanish" + "Singhal");
+/**
+ * Both of them are already a string.
+ * so toprimitive conversation will also be a string
+ * and we concatenate them
+ */
+
+console.log(undefined + "node");
+/**
+ * undefined -> "undefined"
+ * "undefined" + "node" -> "undefinednode"
+ */
+
+console.log("5" + null);
+/**
+ * one of them is already a string, so both of them becomes a string
+ * "5" + "null" -> "5null"
+ */
+
+console.log("tanish" + true);
+console.log("tanish" + [null, undefined]);
+
+console.log("tanish" + {"a" : 10});
+/**
+ * "tanish" -> is already a string
+ * {"a" : 10} -> is not a primitive, so we call toPrimitive without a hint
+ * means hint -> number
+ * we first call valurOf on {"a" : 10} -> it returns same onject
+ * we call toString -> toString will return '[object, object]'
+ */
+console.log();
+
+
+// TODO: ToPrimitive
+// This function takes an input argument and tries to convert it into a non object type(primitive type). If it can't it can throw error.
+// It takes one more optional parameter called as preferred type. If we have 2 or more than 2 values that can become answer,  this optional argument helps us.
+
+let a = {"english":90, "maths":100};
+console.log(a.toString());
+console.log(a.valueOf());
+
+let x = [1,2,3];
+console.log(x.toString());
+console.log(x.valueOf());

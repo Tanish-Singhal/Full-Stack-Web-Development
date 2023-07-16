@@ -5,7 +5,7 @@ console.log("Namaste Duniya!");    // used to print the statement
 
 // TODO: 7 Datatypes
 // Null, Undefined, Boolean, string, number, symbol     => Primitive Datatypes
-// Objects
+// Objects, Functions, Array    => Reference Datatypes
 
 // Number
 console.log(12);
@@ -107,8 +107,8 @@ console.log(10 > 5);
 console.log(10 < 5);
 console.log(10 >= 5);
 console.log(10 <= 5);
-console.log(10 == 5);    // Abstract Equality
-console.log(10 === 5);    // Strict Equality
+console.log(10 == 5);    // Abstract Equality   (it do type conversion)
+console.log(10 === 5);    // Strict Equality    (to don't do type conversion)
 console.log(10 != 5);    // Abstract Not Equal
 console.log(10 !== 5);    // Strict Not Equal
 console.log();
@@ -268,8 +268,16 @@ const item = {
 console.log(item);
 console.log(item.Lovish);
 console.log(item.draw());    // calling the method
+
+// FIXME: To add things in an object (two methods)
+item.color = "yellow";
 item["friend"] = "Shubham";
 console.log(item);
+
+// FIXME: we can access the value by two notation .but why?
+console.log(item.Lovish);
+console.log(item['Lovish']);
+
 
 // FIXME: function to create an object (Factory Function)
 function createRectangle(l, b) {
@@ -302,6 +310,22 @@ let rst = ++lmn;
 console.log(lmn, opq, rst);
 console.log()
 
+// FIXME: Unary Plus (+) 
+// it tries to convert the variable into a number if it is not already a number
+let hu = "22";
+let pu = +hu;     // x type converted
+console.log(typeof hu, ",", hu);
+console.log(typeof pu, ",", pu);
+console.log();
+
+// FIXME: Unary Mius (-)
+// It also converts the operands to a number, but always make the result negative
+let tu = "22";
+let ku = -tu;     // x type converted
+console.log(typeof tu, ",", tu);
+console.log(typeof ku, ",", ku);
+console.log();
+
 
 // TODO: Browser Code (this code will only works on browser)
 // let age = prompt("Hey, What is your age?");
@@ -324,3 +348,52 @@ console.log();
 // so that's why the output is
 // 10
 // undefined
+
+// TODO: Difference between Primitive and Reference Datatypes
+let pri_1 = 10;
+let pri_2 = pri_1;
+pri_1++;
+
+console.log(pri_1);
+console.log(pri_2);
+
+console.log();
+
+let ref_1 = {value : 10};
+let ref_2 = ref_1;
+ref_1.value++;
+
+console.log(ref_1.value);
+console.log(ref_2.value);
+console.log();
+
+// this is because in primitive type coopy was created
+// and in reference type, same address par point karte hai 
+
+// FIXME: Note:- Primitives are copied by their values
+//               Reference are copied by their address/reference
+
+let asd = 10;
+function inc (asd) {
+   asd++;
+}
+
+inc(asd);
+console.log(asd);
+console.log();
+
+
+// TODO: for-in and for-of loop
+let square = {
+    length: 2,
+    breadth: 4 
+};
+
+// for-in loop  (by this i can iterate on object)
+for (let key in square) {
+    // keys are reflected through key variables
+    // values are reflected through square[key]
+    console.log(key, square[key]);
+}
+
+// for-of loop (this loop can only use on iterables like Arrays and Maps)
