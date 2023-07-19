@@ -51,8 +51,9 @@ abcd();
 
 // abcd();
 
-// 3. var khudko window onject mein jodta hai and let nhi jodta hai
-// window object :- things which are not the part of the language, but that things are provided to you by the browser you are working on. Like console, document, settimeout and many more (you can find them in inspect element)
+// 3. var khudko window object mein jodta hai and let nhi jodta hai
+
+// FIXME: Window Object :- things which are not the part of the language, but that things are provided to you by the browser you are working on. Like console, document, settimeout and many more (you can find them in inspect element)
 // to use it :- write "window" in console and then click on the drop down menu
 var a = 12;
 let b = 12;

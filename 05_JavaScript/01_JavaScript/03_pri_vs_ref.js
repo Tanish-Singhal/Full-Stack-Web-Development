@@ -36,17 +36,41 @@ console.log();
 //               Reference are copied by their address/reference
 
 
-// TODO: but if you want to copy the value of c in d (with a reference operator)
-let e = [1, 2, 3, 4, 5];
-let f = [...e];
+// TODO: Reference Cloning
+// but if you want to copy the value of c in d (with a reference operator)
+let arr = [1, 2, 3, 4, 5];
+let copyarr = [...arr];
 
-e.pop();
-console.log(e);
-console.log(f);
+arr.pop();
+console.log(arr);
+console.log(copyarr);
+console.log();
 
-// one more example
-let obj = {name: "harsh"};
-let copyobj = {...obj};
+// FIXME: one more example (object)
+/**
+ * we can clone objects by three ways:- 
+ * Iteration
+ * Assign
+ * Spread
+ */
+ 
+let obj = {
+    name: "harsh",
+    class: "EC C"
+};
+
+// Iteration cloning (-----------)
+let copyobj = {};
+
+for(let key in obj) {
+    copyobj[key] = obj[key];
+}
+
+// Assign cloning (-----------)
+// let copyobj = Object.assign({}, obj);
+
+// Spread Cloning (-----------)
+// let copyobj = {...obj};
 
 copyobj.name = "shubham";
 console.log(obj);
