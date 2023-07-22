@@ -14,14 +14,17 @@ console.log(item);
 console.log(item.Lovish);
 console.log(item.draw());    // calling the method
 
+
 // FIXME: To add things in an object (two methods)
 item.color = "yellow";
 item["friend"] = "Shubham";
 console.log(item);
 
+
 // FIXME: we can access the value by two notation .but why?
 console.log(item.Lovish);
 console.log(item['Lovish']);
+
 
 // FIXME: we can also check if a property exists in an object or not
 if ("Harry" in item) {
