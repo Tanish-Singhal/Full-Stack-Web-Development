@@ -135,33 +135,65 @@ console.log();
 let unSort = [40, 61, 31, 75, 12];
 
 // Sort in ascending order
-console.log(unSort.sort());
+console.log(unSort.sort());     // This sort function sort as a string 
 
 // sort in descending order
 console.log(unSort.reverse());
 console.log();
 
+// Sorting in objects
+let objArr = [
+    {id: 1, name: "Tanish"},
+    {id: 2, name: "Saksham"},
+    {id: 3, name: "Singhal"},
+    {id: 4, name: "Gupta"},
+    {id: 5, name: "Rahul"},
+];
+let sortable = objArr.sort((a, b) => a.id - b.id);
+console.log(sortable);
+
+
+
 
 
 // TODO: Filter in array
-let bunch = [1,23,53,5,6,53,5,4,43,45,7,48,67,8,7,4,6,7,8,5];
+let bunch = [1,-7,48,-67,8,-7,4,6,7,-8,5];
 console.log(bunch);
 
-// Filter which values are greater than 4 and divde by 4
-let nums = bunch.filter(function value) {
-    if (value > 4 && value % 4 === 0) {
-        console.log(nums);
-    }
-}
+// Filter which values are positive
+// let filteredNum = bunch.filter(function (filternum) {
+//     return filternum >= 0;
+// });
+
+// FIXME:
+// function word hatao -> arrow lagao
+// if there a single parameter function, then remove the bracket around filternum
+// if the function body is of single line, then remove the curly braces and the return keyword
+ 
+let filteredNum = bunch.filter( val => val >= 0 );
+console.log(filteredNum);
+console.log();
+
+
 
 
 
 // TODO: Map function
+let numbers = [7, 8, 9, 10];
+console.log(numbers);
+
+// Mapping Each Number to its corresponding Square
+let arrSquare = numbers.map(val => val * val);
+console.log(arrSquare);
+
+// Mapping with Object  (convert it into arrow function if you want)
+let objArray = numbers.map(function (val) {
+    return {element : val};
+});
+console.log(objArray);
+console.log();
 
 
 
-// TODO: Reduce Function
+ 
 
-
-
-// TODO: Chaining
