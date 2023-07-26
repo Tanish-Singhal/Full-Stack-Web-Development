@@ -34,3 +34,15 @@ let findObj2 = course.find(function(course) {
     return course.naam === 'Pratyush';
 });
 console.log(findObj2);
+
+
+
+// FIXME: // Callback Functions
+// jab bhi koi aisa code jo baad me chalta hai aap likoge, kuyuki wo code baad me chalta hai js ko yeh pata nhi hota ki wo complete hua hai ya nhi, aise code ke completion par js ko bataya jata hai ki wo complete hogya aur aap usse chala sakte hai, ye batane ka kaam callback function ka hota hai
+
+setTimeout (function () {
+    console.log("2000 means 2 sec");
+}, 2000);
+// This is called Asynchronous JavaScript
+
+// asisa code jo baad me chalta hai use hum ek function de dete hai ki bhaiya jab complete hojaana to ye chala dena, aur wo function jo hum dete hai wo ek normal function hota hai aur usse hum khate hai callback function

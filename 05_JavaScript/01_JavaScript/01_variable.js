@@ -5,7 +5,7 @@
 var c = 20;
 console.log(c);
 const h = 'abcd';
-if (true) {
+{
     let a = 10;
     console.log(a);
     console.log(c);
@@ -21,7 +21,7 @@ if (true) {
 console.log(c);
 console.log(h);
 console.log();
-// Seedhi baat: Var ko use mat karo
+// FIXME: Seedhi baat: Var ko use mat karo
 
 
 // TODO: Difference between var and let
