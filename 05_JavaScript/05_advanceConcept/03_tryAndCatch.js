@@ -27,9 +27,13 @@ person.fullName = "Pratyush Singhal";
 console.log(person.fullName);
 
 try{
-    person.fullName = true;
+    person.fullname = "Pratyush Singhal";
+    // person.fullName = true;
 }
 catch(e){
     console.log(e);
     // alert(e);
+}
+finally {
+    console.log(person.fullName);
 }

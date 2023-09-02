@@ -1,4 +1,4 @@
-// TODO: Previously we search things on primitive types, but what about reference types
+// Previously we search things on primitive types, but what about reference types
 let course = [
     {no:1, naam:'Tanish'},
     {no:2, naam:'Saksham'},

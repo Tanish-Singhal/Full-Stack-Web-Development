@@ -1,4 +1,4 @@
-// TODO: Chaining (we can apply one than one property)
+// Chaining (we can apply one than one property)
 // we have to filter positive number and then make an object
 let number = [1, 5, 89, -41, -412, 356, -542];
 

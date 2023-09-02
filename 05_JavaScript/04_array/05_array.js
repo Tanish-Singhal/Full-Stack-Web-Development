@@ -2,7 +2,7 @@
 // It is an object and it was of reference type.
 // In array, we can store different types of data in it.
 
-// TODO: Creation of array
+// Creation of array
 let arr = [1, 3, 5, 7, 9];
 console.log(arr);
 console.log();

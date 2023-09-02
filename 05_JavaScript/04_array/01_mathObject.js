@@ -1,4 +1,4 @@
-// TODO: Math object 
+// Math object 
  
 // Euler Number 
 console.log(Math.E);
