@@ -13,7 +13,7 @@ let content = document.querySelector(".heading_text");
 let ele = document.createElement('b');
 ele.textContent = 'ABCD';
 
-content.insertAdjacentElement('beforeBegin', ele);
-content.insertAdjacentElement('afterBegin', ele);
+// content.insertAdjacentElement('beforeBegin', ele);
+// content.insertAdjacentElement('afterBegin', ele);
 content.insertAdjacentElement('beforeEnd', ele);
-content.insertAdjacentElement('afterEnd', ele);
+// content.insertAdjacentElement('afterEnd', ele);
