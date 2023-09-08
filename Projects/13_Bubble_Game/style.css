@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+#wrapper {
+    height: 100vh;
+    width: 100vw;
+    background-color: #64CCC5;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.gameHeading {
+    height: 80px;
+    width: 100%;
+    color: #EEEEEE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gameHeading h1 {
+    font-size: 6rem;
+    text-transform: uppercase;
+}
+
+.gameBox {
+    height: 80%;
+    width: 80%;
+    background-color: #EEEEEE;
+    border-radius: 20px;
+    margin: 40px;
+}
+
+.infoBox {
+    height: 100px;
+    background-color: #053B50;
+    color: #1f95bd;
+    border-radius: 20px 20px 0px 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.scoreInfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.scoreBox {
+    background-color: #EEEEEE;
+    height: 35px;
+    width: 40px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.scoreBox h3 {
+    color: #000;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.numberBtn {
+    height: calc(100% - 100px);
+    border-radius: 0px 0px 10px 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.circleBtn {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background-color: #0a6f97;
+    margin: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circleBtn h3 {
+    color: #EEEEEE;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.circleBtn:hover {
+    background-color: #053B50;
+    cursor: pointer;
+}
