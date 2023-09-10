@@ -21,7 +21,7 @@ setTimeout(function(){
 // there are two types of stack: Main stack and Side stack
 // the things which take things fro side stack to the main stack are called Event Loop.
 console.log("hey!");
-setTimeout(function(){
+setTimeout (function() {
     console.log("hey 2!");      // so this function was run after 2 sec
 }, 2000)                        // 2 sec
 console.log("hey 3!");
