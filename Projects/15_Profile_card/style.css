@@ -9,17 +9,21 @@ html, body {
     width: 100%;
 }
 
-#wraper {
-    height: 100vh;
+.wrapper {
     width: 100vw;
-    background-color: #000;
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     overflow-x: hidden;
     overflow-y: auto;
     position: relative;
+    background-color: #000;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
 }
 
-.cricle1 {
+.circle1 {
     width: 19em;
     height: 19em;
     border-radius: 50%;
@@ -41,7 +45,21 @@ html, body {
     position: absolute;
 }
 
-/* .image {
+.card {
+    height: 450px;
+    background: #ffffff1a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px 50px;
+    border-radius: 15px;
+    color: #ffffff;
+    border: 2px solid #ffffff30;
+    backdrop-filter: blur(15px);
+}
+
+.image {
     border: 2px solid #ffffff30;
     width: 150px;
     height: 150px;
@@ -63,4 +81,46 @@ html, body {
 .subHeading h2 {
     text-align: center;
     color: #ffffff85;
-} */
+}
+
+.btnGroup {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.btn {
+    border: 2px solid #ffffffb9;
+    background: #ffffff00;
+    color: #ffffffb9;
+    cursor: pointer;
+    border-radius: 4px;
+    text-transform: capitalize;
+    padding: 9px 12px;
+}
+  
+.btnShare {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+}
+  
+.btnFollow {
+    width: 150px;
+}
+  
+.btnFollow a {
+    text-decoration: none;
+    color: #ffffffb9;
+}
+
+.btn:hover {
+    background: #ffffffb9;
+    color: #131313;
+}
+  
+.btnFollow:hover a {
+    color: #131313;
+}
+
