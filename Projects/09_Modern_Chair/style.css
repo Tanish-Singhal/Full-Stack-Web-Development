@@ -7,7 +7,9 @@
 }
 
 /* Mostly this confriguration used in all the websites */
-* {
+*,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
