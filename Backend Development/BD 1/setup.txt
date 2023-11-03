@@ -1,0 +1,10 @@
+
+
+
+installation of Body Parser
+
+1) npm install body-Parser
+
+2) include these two lines in the code
+var bodyParser = require('body-parser');
+app.use(bodyParser.json());
