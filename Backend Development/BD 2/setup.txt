@@ -4,10 +4,10 @@ EJS Setup
     app.set("view engine", "ejs");
 3) make a folder name "views"
 4) make all the ejs files you want to make
-5) change app.send to app.render    &    name the ejs file you wan to render on that route
+5) change app.send to app.render    &    name the ejs file you want to render on that route
 
 Static File Setup
 1) create a folder name "public"
-2) create thress folders inside it name it as "images", "stylesheets", "javascripts"
-3) confogure the express Static in script.js file
+2) create three folders inside it name it as "images", "stylesheets", "javascripts"
+3) configure the express Static in script.js file
 4) understand the path

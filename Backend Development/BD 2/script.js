@@ -1,7 +1,7 @@
 const express = require ('express');
 const app = express();
 
-// In htnl, we can't perform claculation. if we try 1+2 it will print 1+2
+// In html, we can't perform claculation. if we try 1+2 it will print 1+2
 // so we want Dynamic HTML, which is EJS
 app.set("view engine", "ejs");
 
@@ -13,7 +13,7 @@ app.use(express.static('./public'));
 // there are many other template engine like pug, ejs, jade HandlebarsJS, etc.
 // but EJS is very very similar to HTML
 
-// here we attach our ejs
+// in render, we have to link our files which are persent in our views folder
 app.get('/', function (req, res) {
     res.render("index", {age: 20});
 });
@@ -28,7 +28,7 @@ app.get('/profile', function (req, res) {
 
 // Error Handling
 app.use('/error', function(req, res,next) {
-    throw Error("I don't know, figure out yourself.");
+    throw Error("Pata nhi bhai, koi error aa gya hai. Mere pass time nhi hai, to apne aap figure out karle error.");
 });
 // in this the throw Error will search for the errorHandler in the whole page and then the errorHandler will show you the error which you want to print
 // by this you can hrow coustom error on the page
