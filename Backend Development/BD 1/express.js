@@ -90,7 +90,6 @@ function calculatedMul(counter) {
 //     res.send(answer);
 // }
 
-// app.post('/handleSum', handleFirstSum);
 
 // FIXME: HEADERS
 // function handleFirstSum (req, res) {
@@ -101,7 +100,6 @@ function calculatedMul(counter) {
 //     res.send(answer);
 // }
 
-// app.post('/handleSum', handleFirstSum);
 
 // FIXME: BODY Paramater
 // function handleFirstSum (req, res) {
@@ -113,7 +111,6 @@ function calculatedMul(counter) {
 //     res.send(answer);
 // }
 
-// app.post('/handleSum', handleFirstSum);
 
 
 
@@ -147,10 +144,7 @@ function handleFirstSum (req, res) {
 
     res.status(200).send(answerObj);
 }
-
 app.post('/handleSum', handleFirstSum);
-
-
 
 
 
