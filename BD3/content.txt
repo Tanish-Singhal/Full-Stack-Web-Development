@@ -1,0 +1,53 @@
+Mongo DB
+Relational Database and Non Relational Database
+
+    Code Side                   Mongo DB Side
+1. Database Setup           Database Formation
+2. Model                    Collection
+3. Schema                   Documents
+
+
+
+
+AWS Server
+1. server par bhahut sare apps ka data hai (like Amazon, facebook, Instagram, etc.)     => Database Formation
+2. inside Amazon, there are many subcategory (users, sales, item stocks, out of stock items, etc.)      => Collection
+3. inside users, there are many subcategory (like Tanish, Pratyush, Sandeep, Neelam)     => Documents
+
+
+we setup Database in /routes/user.js
+Setup:
+1) install MongoDB
+2) install Mongoose.js
+3) require ans setup connection
+4) make Schema
+5) create Model
+
+
+
+
+           Cookies                                  Session
+If the data save on the browser         If the data is save on the Server
+  then it is called Cookies.               then it is called Session.
+
+
+Session:
+1) create a Session
+req.session.<koi bhi name> = koi bhi name
+
+2) read the session
+req.session.<koi bhi name>
+
+3) delete the session
+req.session.destory
+
+
+Cookies:
+1) create cookie
+res.cookie("name", value);
+
+2) cookie reading
+req.cookies.name
+
+3) delete cookie
+res.clearCookie("name");

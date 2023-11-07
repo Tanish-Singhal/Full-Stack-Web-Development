@@ -1,0 +1,52 @@
+Express Generator
+It will make the basic files and folder structure for you, which you will required to make in every project
+
+Installlation:
+1) first install express generator globally
+npm i express-generator -g
+
+2) create a folder
+express appname --view=ejs
+
+3) install node in the folder
+
+4) Run the setup
+nodemon
+
+
+
+Mongoose
+
+1) Install mongoose package
+npm i mongoose
+
+2) setup the user.js file 
+
+3) at index.js (write it at top)
+const userModel = require("./users");
+
+
+
+Sessions
+If the data i saved on the server, then it is called Sessions.
+
+Installation:
+1) install sessions package
+npm install express-session
+
+2) then in app.js write for importing the session package
+var session = require("express-session");
+
+3) then below view engine setup write
+app.use(session({
+  resave: false,
+  saveUninitialized: false,
+  secret: "holabolaholabola"        // any random thing
+}));
+
+
+Cookies
+If the data i saved on the browser, then it is called Cookies.
+
+Installation:
+Express generator automatically setup cookie parser in the folder
