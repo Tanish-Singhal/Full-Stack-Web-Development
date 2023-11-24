@@ -1,0 +1,35 @@
+Backend Development
+
+		Transfer of messages to a far places
+phone se data (in small packets) jata hai nearest tower par.
+then vo nearest tower unn small packets ko convert karta hai elctrical signals me.
+then these electrical signal travel from optical fiber (inside the ocean) to its destination
+then these signal travel to the nearest tower of the destination
+then the tower convert these electrical signal to small packets
+then these packets will be delivered to the destination phone
+
+
+		Transfer of messages in nearby places
+jo request hoti hai usse tumhara ISP (Internet Service Provider) check karti hai
+agar vo request valid hoti hai to vo request aage pass on ho jaati hai, otherwise vo block jo jaati hai
+
+
+		Router
+phone se message phele router k pass aata hai then router aage forward karta hai 
+Router works on Mac Address.
+router send the messages to according to their Mac Address.
+
+phele WhatsApp issi wajh se hack hota tha, jinka bhi mac Address same hota tha, unn sabke pass message pahuch jata tha.
+after end to end encryption, message abhi bhi receive hota hai but vo decrypt nhi ho pata. so the message is useless nowadays.
+
+
+		Server
+If any computer which is connected to internet and is programmed to receive requests and give response back is called server.
+
+
+		http Vs https (secured)
+it is the only protocol by which we can send send o receive message in internet.
+in http => the packets which are send we can see them with the help of wifi dongle in the computer system.
+
+To connect to a server we have ports. (closed ports and open ports) (4 digit number)
+jab aap live server on karte ho, then aapko ek port milta hai.

@@ -1,0 +1,32 @@
+Flash Messages
+
+FIXME: NOTE: Connect Flash don't run without Express Session. So,
+1) install sessions package
+npm install express-session
+
+2) then in app.js write for importing the session package
+var expressSession = require("express-session");
+
+3) then below "view engine" setup write
+app.use(expressSession({
+  resave: false,
+  saveUninitialized: false,
+  secret: "holabolaholabola"
+}));
+
+
+TODO: INSTALLATION:
+1) install connect-flash
+npm i connect-flash
+
+2) then in app.js write for importing the flash Message package
+var flash = require("connect-flash");
+
+2) make sure you put connect flash in a app.use function. Below express-session write...
+app.use(flash());
+
+3) then kisi bhi route ma aap ko flash create karna hai
+To create Flash Message in theis folder we use Bootstrap
+So, we simply setup the index.ejs file with Bootstrap html file
+
+4) kisi bhi dusre route par app use chalane ka try kare

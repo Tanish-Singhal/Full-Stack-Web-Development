@@ -1,0 +1,8 @@
+**) Flash Messages
+jab bhi app kisi ejs page ko dekhenege waha par aapko kisi parkar ka koi highlighted information dena hai, then it is called Flash Messages.
+This is more like a good-looking alerts, warnings and descriptions.
+
+In this, user give something on the frontend (like email and password), then that details goes to the backend server for checking.
+if the login credentials are wrong, then a warning flash messgae was send from the server to the frontend as Flash Message.
+
+Flash Messages ka means server k kisi route mein koi data banana and us data ko doosre route me use kar pana.
