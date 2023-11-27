@@ -1,0 +1,9 @@
+**) Authentication and Authorization
+Passport - Bag in which there are all the things which is required to Login, Register, etc.
+
+Heart of login/Register (strategy) - login with Google, login with Facebook, login with Github, Local Strategy (Username and Passoword)
+
+all the usernames and passwords are encrypted by a package passport-local-mingoose
+
+**) Protected Routes
+If you try to like or comment on instagram without login into the account, then instagram sends you a pop up saying "First you need to login". So, these are called Protected Routes.

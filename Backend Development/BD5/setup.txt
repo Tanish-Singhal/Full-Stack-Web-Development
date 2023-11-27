@@ -1,0 +1,22 @@
+Authentication and Authorization
+
+TODO: INSTALLATION:
+
+1) npm i passport                 => it include all the code of login, Register, etc.
+   npm i passport-local           => it include the code of the Strategy   
+   npm i passport-local-mongoose  => it include the code of encryption and decryption
+   npm i mongoose                 
+   npm i express-session
+
+2) do mongoose setup (like in BD3)
+
+3) do express-session setup (like in BD3)
+
+4) require passport in app.js and in index.js
+const passport = require('passport');
+
+4) write app.js code first in app.js file and write it after view engine and before logger
+
+5) setup users.js
+
+6) in index.js try register first and then other code as well
