@@ -132,7 +132,8 @@ app.get('/profile/:username', function (req, res) {
 // 5. Server Error Resposes (500 - 599)
 
 function handleFirstSum (req, res) {
-    let counter = req.body.counter;
+    // let counter = req.body.counter;
+    let counter = req.query.counter;
 
     let sumResult = calculatedSum(counter);
     let MulResult = calculatedMul(counter);
@@ -144,7 +145,7 @@ function handleFirstSum (req, res) {
 
     res.status(200).send(answerObj);
 }
-app.post('/handleSum', handleFirstSum);
+app.get('/handleSum', handleFirstSum);
 
 
 
