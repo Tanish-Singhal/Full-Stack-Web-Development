@@ -1,0 +1,7 @@
+Data Association
+ek model se doosre model ke data ko jood dena using id, means ki agar hamare pass ek user hai to vo post banayega hi, jab post banega to vo user k dwaara hi banega. To jab koi data ek dusre se closely related hote hai to hum unhe ek dusre se jood dete hai. Like ek moedl k bane hue data ki id dusre model k data ko dedete hai aur is model k data ki id pichle model k data ko dedete hai.
+
+user hi post banata hai
+and har user k pass user-id hogi, and har post k pass post-id hogi
+then we post ko user-id de denge and user ko post-id de denge
+By this we can find the user who made the post and all the post made by a specific user easily
